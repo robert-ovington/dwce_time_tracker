@@ -1,0 +1,13 @@
+New API Token
+Important
+
+Copy the API token below. Save to a secure place, as this API token will no longer be visible once this message is closed.
+Send the API token and documentation link below to your developers or third-party service providers.
+Anyone possessing this token can use the API to interact with the accounts you have permission to access.
+API token
+9f28c036-1a99-40d5-9d37-390a96942d62
+Copy Token
+API Documentation
+https://api-docs.velocityfleet.com/
+Copy Link
+

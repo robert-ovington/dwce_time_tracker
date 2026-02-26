@@ -1,0 +1,421 @@
+{
+  "database_path": "C:\\Users\\robie\\AppData\\Roaming\\Cursor\\User\\workspaceStorage\\53725de4b99ffb0be1f96c1045b09918\\state.vscdb",
+  "extracted_at": "2026-01-04T19:02:12.166385",
+  "total_items": 138,
+  "chat_keys": [
+    "cursor/layout/editor.auxiliaryBar.width",
+    "anysphere.cursor-retrieval",
+    "workbench.panel.aichat.da1b2a22-592e-4970-b7bd-93034f36276d.numberOfVisibleViews",
+    "cursor/editorLayout.sidebarVisible",
+    "cursor/editorLayout.sidebarWidth",
+    "cursor/editorLayout.panelVisible",
+    "cursor/editorLayout.editorWidth",
+    "cursor/editorLayout.auxiliaryBarVisible",
+    "cursor/editorLayout.auxiliaryBarWidth",
+    "cursor/editorLayout.statusBarVisible",
+    "cursorAuth/workspaceOpenedDate",
+    "cursor/needsComposerInitialOpening",
+    "workbench.panel.composerChatViewPane.b1b3ad39-123b-419c-9d5f-a02aeef28745",
+    "cursor/agentLayout.showSwitcherLastValue",
+    "cursor/agentLayout.showSwitcherLastHiddenAt",
+    "cursor/unifiedAppLayout",
+    "workbench.panel.composerChatViewPane.69e25df3-684e-4210-89a0-59995e7c8fb7",
+    "cursor/agentLayout.hiddenSwitcherLayoutPreference",
+    "cursor/agentLayout.hiddenSwitcherLayoutPreferenceUpdatedAt",
+    "cursor/hasSetInitialAppLayout",
+    "workbench.panel.composerChatViewPane.dc660b4e-9970-437d-b15b-7da0e4af442d",
+    "cursor/agentLayout.sidebarVisible",
+    "cursor/agentLayout.sidebarWidth",
+    "cursor/agentLayout.panelVisible",
+    "cursor/agentLayout.editorVisible",
+    "cursor/agentLayout.editorWidth",
+    "cursor/agentLayout.auxiliaryBarVisible",
+    "cursor/agentLayout.auxiliaryBarWidth",
+    "cursor/agentLayout.statusBarVisible",
+    "workbench.panel.aichat.69e25df3-684e-4210-89a0-59995e7c8fb7.numberOfVisibleViews",
+    "workbench.panel.aichat.dc660b4e-9970-437d-b15b-7da0e4af442d.numberOfVisibleViews",
+    "cursor/workspaceEligibleForSnippetLearning",
+    "cursor/agentLayoutSwitchTooltipPending",
+    "cursor/agentLayoutSwitchTooltipDismissed",
+    "workbench.panel.composerChatViewPane.01f13f8b-ce23-4419-934c-b14d1670ad25",
+    "workbench.panel.aichat.01f13f8b-ce23-4419-934c-b14d1670ad25.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.825d9c19-cd77-43f7-89b0-fdfde4f858b9",
+    "workbench.panel.composerChatViewPane.a837f0ec-62ec-42f2-82ee-a54f5d4a5ff3",
+    "workbench.panel.aichat.825d9c19-cd77-43f7-89b0-fdfde4f858b9.numberOfVisibleViews",
+    "workbench.panel.aichat.a837f0ec-62ec-42f2-82ee-a54f5d4a5ff3.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.bb887e59-c5a9-4c09-82be-015a076b1dd6",
+    "workbench.panel.composerChatViewPane.0309a493-20ca-4fe3-9b58-64f1bc0a6f49",
+    "workbench.panel.aichat.bb887e59-c5a9-4c09-82be-015a076b1dd6.numberOfVisibleViews",
+    "workbench.panel.aichat.0309a493-20ca-4fe3-9b58-64f1bc0a6f49.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.5e889302-a3e5-49a7-86ec-7ec829e7027f",
+    "workbench.panel.aichat.5e889302-a3e5-49a7-86ec-7ec829e7027f.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.71315391-9798-484c-a0e8-11cb7ae17db3",
+    "workbench.panel.aichat.71315391-9798-484c-a0e8-11cb7ae17db3.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.68320f19-7416-4681-83e7-0fb318c35882",
+    "workbench.panel.aichat.68320f19-7416-4681-83e7-0fb318c35882.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.a7830c60-485f-4191-b4bd-8560655d9520",
+    "workbench.panel.aichat.a7830c60-485f-4191-b4bd-8560655d9520.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.e3017b69-db2e-4505-8843-2aa7da274fd8",
+    "workbench.panel.aichat.e3017b69-db2e-4505-8843-2aa7da274fd8.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.9c585f4f-4cbe-460a-a912-27327cc54001",
+    "workbench.panel.aichat.9c585f4f-4cbe-460a-a912-27327cc54001.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.5977b1a3-3fc9-4ffe-b866-ac7ec059aed9",
+    "workbench.panel.aichat.5977b1a3-3fc9-4ffe-b866-ac7ec059aed9.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.23a860a4-6fdf-4f0d-8fd9-71e996017be7",
+    "workbench.panel.aichat.23a860a4-6fdf-4f0d-8fd9-71e996017be7.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.df0cd7e6-97bb-4407-9ca8-25f799540de2",
+    "workbench.panel.composerChatViewPane.337fd79c-563c-4e84-8f7a-2e3fa59b45c0",
+    "workbench.panel.composerChatViewPane.84a8720a-399e-46a6-a44b-d900b300176f",
+    "workbench.panel.aichat.df0cd7e6-97bb-4407-9ca8-25f799540de2.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.000940f7-5c73-481b-8cc3-4917508cac88",
+    "workbench.panel.composerChatViewPane.6afe8c8c-bb88-4339-bf57-8ac4a69013f4",
+    "workbench.panel.composerChatViewPane.fc2639b2-8cfd-46b0-b8d3-88c25e9c61db",
+    "workbench.panel.aichat.000940f7-5c73-481b-8cc3-4917508cac88.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.886fe2aa-80e0-4ed8-af23-e3330d3be300",
+    "workbench.panel.aichat.886fe2aa-80e0-4ed8-af23-e3330d3be300.numberOfVisibleViews",
+    "workbench.panel.composerChatViewPane.0a4299f9-a7a6-4782-a78c-a20e4f444445",
+    "workbench.panel.aichat.0a4299f9-a7a6-4782-a78c-a20e4f444445.numberOfVisibleViews"
+  ],
+  "chat_data": {
+    "cursor/layout/editor.auxiliaryBar.width": 479,
+    "anysphere.cursor-retrieval": {
+      "cursor-retrieval-state-version": 1,
+      "map/8f2a5c0f157f3ab157b1147a0aa0e621d47cb091176581fbecbc4f8c47a9c22a-dwce_time_tracker/repoKeys": {
+        "repoName": "8fbb9a73-4b6a-4bae-9874-d84ec6f8d7f7",
+        "orthogonalTransformationSeed": 8487519178854020,
+        "pathEncryptionKey": "kc1w4TRyo7sKnv4f2LwC5h1gzHtMwO96vfkuPUyHsTQ",
+        "pathEncryptionScheme": "aes-256-ctr",
+        "canUpdateKey": false
+      },
+      "map/8f2a5c0f157f3ab157b1147a0aa0e621d47cb091176581fbecbc4f8c47a9c22a-dwce_time_tracker/auth0|user_01KBVY5AXBYBP4NFWHTFV0NPY7/indexingStatus": {
+        "globalStatus": {
+          "case": "synced",
+          "numFiles": 219
+        },
+        "progress": 100
+      }
+    },
+    "workbench.panel.aichat.da1b2a22-592e-4970-b7bd-93034f36276d.numberOfVisibleViews": 1,
+    "cursor/editorLayout.sidebarVisible": false,
+    "cursor/editorLayout.sidebarWidth": 300,
+    "cursor/editorLayout.panelVisible": false,
+    "cursor/editorLayout.editorWidth": 1226,
+    "cursor/editorLayout.auxiliaryBarVisible": true,
+    "cursor/editorLayout.auxiliaryBarWidth": 480,
+    "cursor/editorLayout.statusBarVisible": true,
+    "cursorAuth/workspaceOpenedDate": "2025-12-07T10:35:16.956Z",
+    "cursor/needsComposerInitialOpening": false,
+    "workbench.panel.composerChatViewPane.b1b3ad39-123b-419c-9d5f-a02aeef28745": {
+      "workbench.panel.aichat.view.7a82a544-1f1b-473e-8357-78b9121e3ffd": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 940
+      }
+    },
+    "cursor/agentLayout.showSwitcherLastValue": false,
+    "cursor/agentLayout.showSwitcherLastHiddenAt": 1765446113621,
+    "cursor/unifiedAppLayout": "agent",
+    "workbench.panel.composerChatViewPane.69e25df3-684e-4210-89a0-59995e7c8fb7": {
+      "workbench.panel.aichat.view.7a82a544-1f1b-473e-8357-78b9121e3ffd": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 962
+      },
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 940
+      },
+      "workbench.panel.aichat.view.52b93b31-deae-4ad0-9035-cfc9ccb3ee57": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.f334e08d-5c67-45a9-8aea-3efb8b700a64": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.c81a51c7-70d2-4269-9d3e-194a716f72de": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.9d096f28-2184-4c74-b5a0-5c5ffc3d0b3b": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.a2dc5b6b-c7a5-4e26-ba7c-05532092f84e": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.11a5a6e6-d191-4813-84c7-42632bcfc181": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.4b7b26b4-1f22-487a-a61c-22db0502bba3": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.ceb46abe-4350-4854-b624-ec5caa49dfb2": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.6a8ad320-5824-4bf4-8af2-25585119abb2": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "cursor/agentLayout.hiddenSwitcherLayoutPreference": "agent",
+    "cursor/agentLayout.hiddenSwitcherLayoutPreferenceUpdatedAt": 1765103717969,
+    "cursor/hasSetInitialAppLayout": true,
+    "workbench.panel.composerChatViewPane.dc660b4e-9970-437d-b15b-7da0e4af442d": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "cursor/agentLayout.sidebarVisible": false,
+    "cursor/agentLayout.sidebarWidth": 300,
+    "cursor/agentLayout.panelVisible": false,
+    "cursor/agentLayout.editorVisible": true,
+    "cursor/agentLayout.editorWidth": 1306,
+    "cursor/agentLayout.auxiliaryBarVisible": true,
+    "cursor/agentLayout.auxiliaryBarWidth": 400,
+    "cursor/agentLayout.statusBarVisible": false,
+    "workbench.panel.aichat.69e25df3-684e-4210-89a0-59995e7c8fb7.numberOfVisibleViews": 1,
+    "workbench.panel.aichat.dc660b4e-9970-437d-b15b-7da0e4af442d.numberOfVisibleViews": 1,
+    "cursor/workspaceEligibleForSnippetLearning": true,
+    "cursor/agentLayoutSwitchTooltipPending": true,
+    "cursor/agentLayoutSwitchTooltipDismissed": false,
+    "workbench.panel.composerChatViewPane.01f13f8b-ce23-4419-934c-b14d1670ad25": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.01f13f8b-ce23-4419-934c-b14d1670ad25.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.825d9c19-cd77-43f7-89b0-fdfde4f858b9": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 962
+      },
+      "workbench.panel.aichat.view.e7daf1ac-03f6-49ab-84f5-37037449def0": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.9c89dffa-975b-4fb9-8c48-0feddc3b8179": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.f334e08d-5c67-45a9-8aea-3efb8b700a64": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.c81a51c7-70d2-4269-9d3e-194a716f72de": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.9d096f28-2184-4c74-b5a0-5c5ffc3d0b3b": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.a2dc5b6b-c7a5-4e26-ba7c-05532092f84e": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.11a5a6e6-d191-4813-84c7-42632bcfc181": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.4b7b26b4-1f22-487a-a61c-22db0502bba3": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.ceb46abe-4350-4854-b624-ec5caa49dfb2": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.6a8ad320-5824-4bf4-8af2-25585119abb2": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.composerChatViewPane.a837f0ec-62ec-42f2-82ee-a54f5d4a5ff3": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 962
+      }
+    },
+    "workbench.panel.aichat.825d9c19-cd77-43f7-89b0-fdfde4f858b9.numberOfVisibleViews": 1,
+    "workbench.panel.aichat.a837f0ec-62ec-42f2-82ee-a54f5d4a5ff3.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.bb887e59-c5a9-4c09-82be-015a076b1dd6": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 962
+      },
+      "workbench.panel.aichat.view.9c89dffa-975b-4fb9-8c48-0feddc3b8179": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.e7daf1ac-03f6-49ab-84f5-37037449def0": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.f334e08d-5c67-45a9-8aea-3efb8b700a64": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.c81a51c7-70d2-4269-9d3e-194a716f72de": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.9d096f28-2184-4c74-b5a0-5c5ffc3d0b3b": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.a2dc5b6b-c7a5-4e26-ba7c-05532092f84e": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.11a5a6e6-d191-4813-84c7-42632bcfc181": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.4b7b26b4-1f22-487a-a61c-22db0502bba3": {
+        "collapsed": false,
+        "isHidden": false
+      },
+      "workbench.panel.aichat.view.ceb46abe-4350-4854-b624-ec5caa49dfb2": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.composerChatViewPane.0309a493-20ca-4fe3-9b58-64f1bc0a6f49": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.bb887e59-c5a9-4c09-82be-015a076b1dd6.numberOfVisibleViews": 1,
+    "workbench.panel.aichat.0309a493-20ca-4fe3-9b58-64f1bc0a6f49.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.5e889302-a3e5-49a7-86ec-7ec829e7027f": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.5e889302-a3e5-49a7-86ec-7ec829e7027f.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.71315391-9798-484c-a0e8-11cb7ae17db3": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.71315391-9798-484c-a0e8-11cb7ae17db3.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.68320f19-7416-4681-83e7-0fb318c35882": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.68320f19-7416-4681-83e7-0fb318c35882.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.a7830c60-485f-4191-b4bd-8560655d9520": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 962
+      }
+    },
+    "workbench.panel.aichat.a7830c60-485f-4191-b4bd-8560655d9520.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.e3017b69-db2e-4505-8843-2aa7da274fd8": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.e3017b69-db2e-4505-8843-2aa7da274fd8.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.9c585f4f-4cbe-460a-a912-27327cc54001": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.9c585f4f-4cbe-460a-a912-27327cc54001.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.5977b1a3-3fc9-4ffe-b866-ac7ec059aed9": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.5977b1a3-3fc9-4ffe-b866-ac7ec059aed9.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.23a860a4-6fdf-4f0d-8fd9-71e996017be7": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.23a860a4-6fdf-4f0d-8fd9-71e996017be7.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.df0cd7e6-97bb-4407-9ca8-25f799540de2": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 940
+      }
+    },
+    "workbench.panel.composerChatViewPane.337fd79c-563c-4e84-8f7a-2e3fa59b45c0": {
+      "workbench.panel.aichat.view.6a8ad320-5824-4bf4-8af2-25585119abb2": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.composerChatViewPane.84a8720a-399e-46a6-a44b-d900b300176f": {
+      "workbench.panel.aichat.view.ceb46abe-4350-4854-b624-ec5caa49dfb2": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.df0cd7e6-97bb-4407-9ca8-25f799540de2.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.000940f7-5c73-481b-8cc3-4917508cac88": {
+      "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 940
+      },
+      "workbench.panel.aichat.view.0fb1a289-f1a3-4aa1-93c0-6673a8fff028": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 940
+      }
+    },
+    "workbench.panel.composerChatViewPane.6afe8c8c-bb88-4339-bf57-8ac4a69013f4": {
+      "workbench.panel.aichat.view.6a8ad320-5824-4bf4-8af2-25585119abb2": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.composerChatViewPane.fc2639b2-8cfd-46b0-b8d3-88c25e9c61db": {
+      "workbench.panel.aichat.view.ceb46abe-4350-4854-b624-ec5caa49dfb2": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.000940f7-5c73-481b-8cc3-4917508cac88.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.886fe2aa-80e0-4ed8-af23-e3330d3be300": {
+      "workbench.panel.aichat.view.0fb1a289-f1a3-4aa1-93c0-6673a8fff028": {
+        "collapsed": false,
+        "isHidden": false
+      }
+    },
+    "workbench.panel.aichat.886fe2aa-80e0-4ed8-af23-e3330d3be300.numberOfVisibleViews": 1,
+    "workbench.panel.composerChatViewPane.0a4299f9-a7a6-4782-a78c-a20e4f444445": {
+      "workbench.panel.aichat.view.0fb1a289-f1a3-4aa1-93c0-6673a8fff028": {
+        "collapsed": false,
+        "isHidden": false,
+        "size": 940
+      }
+    },
+    "workbench.panel.aichat.0a4299f9-a7a6-4782-a78c-a20e4f444445.numberOfVisibleViews": 1
+  },
+  "conversations": []
+}

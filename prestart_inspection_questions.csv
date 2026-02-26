@@ -1,0 +1,55 @@
+﻿question,inspection,interval,severity,category_1,category_2,category_3,category_4,category_5,category_6,old_ref
+Air Tanks,Drain,Weekly,5,1,,,1,,,1
+"Engine Oil, Coolant, Brake & Clutch Fluid",Level,Daily,5,1,1,,1,,,2
+Cab & Rear Interior tidy,Clean,Weekly,5,1,1,,,,,3
+Damage to Vehicles / Plant / Equipment,Condition,Daily,4,1,1,1,1,1,1,4
+"Electrical Equipment, Pat Test in Date & Cond.",Inspect,Daily,2,,,,,,1,5
+Exterior,Wash,Weekly,5,1,,,,,,6
+Fire Extinguisher Full & In Date,Inspect,Daily,4,1,1,,,,,7
+Foot & Hand Brake,Condition,Daily,1,1,1,1,1,,,8
+"Horn, Motion Alarm & Safety Devices",Working,Daily,2,1,1,,,1,,9
+"Hyd., Steering, Transmission & Slew Reduct. Oil",Level,Weekly,5,1,1,,,,,10
+"Hydraulic, Air, Water & Fuel Hoses",Condition,Daily,3,1,1,,1,1,,11
+"Insurance, Tax, NCT & CVRT Certificate in Date",In Place,Daily,5,1,,,,,,12
+Lights & Markings,Clean,Daily,5,1,1,1,1,,,13
+"Lights, Indicators & Flashing Beacons",Working,Daily,2,1,1,1,1,,,14
+Mirrors & Camera,In Order,Daily,2,1,1,1,,,,15
+"Oil, Water, Air & Fuel Leaks",Inspect,Daily,3,1,1,,1,1,,16
+Operators Controls,In Order,Daily,3,1,1,,1,1,,17
+Other Warning Devices & instruments,Working,Daily,2,1,1,,1,1,,18
+"Cracks in Main Structures, Casings, Panels, Etc.",Condition,Daily,3,1,1,1,1,1,,19
+Seat Belts,Inspect,Daily,1,1,1,,1,,,20
+"Steps, Handles & Guards",Condition,Daily,2,1,1,1,1,1,,22
+Tyre Thread Depth/Condition & Air Pressure,Inspect,Daily,2,1,1,1,1,,,23
+Wheel Nuts,Inspect,Daily,1,1,1,1,1,,,24
+"Windows, Wipers, Washers & Heater",Condition,Daily,4,1,1,,,,,25
+Radiators - Clean Condition,Inspect,Daily,3,1,1,,,,,26
+"Bucket Hitch Locking Mechanism, Bolts & Pins",Inspect,Daily,1,,1,,,,,30
+Emergency Stop / Hydraulic Safety Lockout,Working,Daily,1,1,1,,1,1,,31
+Grease Breaker,Complete,2 x Daily,5,,1,,,,,32
+Grease Bucket Hinge Pins,Complete,Daily,5,,1,,,,,33
+Grease in full - All Plant & Equipment,Complete,Weekly,5,1,1,1,1,1,,34
+Height Restrictor,Working,Daily,2,,1,,,,,35
+Hooks & Lifting Points,Inspect,Daily,1,,,,,1,,36
+Load Chart,In Place,Daily,3,,,,,1,,37
+"Other Safety Pins, Clips, Etc.",Condition,Daily,2,1,1,1,1,1,,38
+Safe Load Indicator / Alarm,Working,Daily,2,,,,,1,,39
+Track Chain (Tension Not Too Tight),Inspect,Weekly,4,,1,,,,,40
+Track Pads / Rubber Blocks,Inspect,Weekly,3,,1,,,,,41
+Track Rollers,Condition,Weekly,3,,1,,,,,42
+Chains & Shackles Certificate in Date & Condition,Inspect,Daily,1,,,,,1,,43
+Slings Certificate in Date & Condition,Inspect,Daily,1,,,,,1,,44
+"Wire Rope & Hooks, Cert. in Date & Cond.(Winch/Hoist)",Inspect,Daily,1,,,,,1,,45
+"Draw Bar Locking Mechanism, Bolts & Pins",Inspect,Daily,1,1,,1,1,,,46
+Gas Flashback Arrestors,Inspect,Daily,2,,,,,,1,47
+Grease Van/Plant Trailer Drawbar,Complete,Weekly,5,,,1,1,,,48
+Load Secured & Weight Distributed Correctly,Inspect,Daily,5,1,,1,,,,49
+"Ratchet Straps, Chains & Tying Down Points",Condition,Daily,2,1,,1,,,,50
+Trailer Break Away Cable & Chain,Inspect,Daily,2,,,1,1,,,51
+Trailer Jack Leg / Landing Legs,Condition,Daily,3,,,1,1,,,52
+Whip Checks (Compressors),Condition,Daily,2,,,,1,,,53
+"Escape Breathing Apparatus, Cert. in Date & Cond.",Inspect,Daily,1,,,,,,1,54
+"Harness, Certificate in Date & Condition",Inspect,Daily,1,,,,,,1,55
+Ladder's Condition,Inspect,Daily,1,,,,,,1,56
+"Inertia Block, Certificate in Date & Condition",Inspect,Daily,1,,,,,,1,57
+"Tripod & Lanyard, Certificate in Date & Condition",Inspect,Daily,1,,,,,,1,58

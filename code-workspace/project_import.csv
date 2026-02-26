@@ -1,0 +1,18 @@
+﻿project_number,client_name,project_name,county,town,townland,address,description_of_work,completion_date,is_active,latitude,longitude
+A6-0001,D.W.C.E. Ltd. (Overheads A),"A6-0001 - Job List A, Overheads, ",,Overheads,,Job List A,,,TRUE,,
+A6-0002,Wicklow Co. Co. (Roads),"A6-0002 - Bus Stops, Dunlavin, Co. Wicklow",Wicklow,Dunlavin,,Bus Stops,Excavation  & disposal of existing concrete  footpath(four locations) 27m3,,TRUE,53.057102,-6.700619
+A6-0003,Wicklow Co. Co. (Roads),"A6-0003 - Bus Stops, Rathnew, Co. Wicklow",Wicklow,Rathnew,,Bus Stops,Excavation  & disposal of existing concrete  footpath(four locations) 96m3,,TRUE,52.99344,-6.076783
+A6-0004,Wicklow Co. Co. (Roads),"A6-0004 - Bus Stops, Blessington, Co. Wicklow (A5-0808)",Wicklow,Blessington,,Bus Stops,,,TRUE,53.176,-6.5307
+A6-0005,Kilkenny Co. Co. (Water),"A6-0005 - Archersfield, Kilmoganny, Co. Kilkenny",Kilkenny,Kilmoganny,,Archersfield,"Excavate in footpath outside pump house and locate existing 100mm Watermain. Blank mains, backfill with Clause 804 and reinstate concrete bay 3m x 2m",,TRUE,52.463106,-7.325312
+A6-0006,Kilkenny Co. Co. (Water),"A6-0006 - Brookfield, Ballyhale, Co. Kilkenny",Kilkenny,Ballyhale,,Brookfield,Excavate and locate existing Watermain at pump house,,TRUE,52.46964,-7.201498
+A6-0007,Kilkenny Co. Co. (Water),"A6-0007 - Whitecastle, Knocktopher, Co. Kilkenny",Kilkenny,Knocktopher,,Whitecastle,Remove cover and cover slab from tank. Pump out tank and fill with sand 36m3. Return to site site and backfill with topsoil and sow lawn seeds,,TRUE,52.487075,-7.215052
+B6-0001,ESB Networks (National Ducting & Framework Contract),"B6-0001 - Job List B, Overheads, ",,Overheads,,Job List B,,,TRUE,,
+B6-0002,ESB Networks (National Ducting & Framework Contract),"B6-0002 - Morris TM, Tomanoole, Co. Wexford",Wexford,Tomanoole,,Morris TM,,,TRUE,52.572094,-6.620284
+B6-0003,ESB Networks (National Ducting & Framework Contract),"B6-0003 - Doyle TM, Rathduffmore, Co. Wicklow",Wicklow,Rathduffmore,,Doyle TM,,,TRUE,52.88516,-6.52435
+B6-0004,ESB Networks (National Ducting & Framework Contract),"B6-0004 - McInerney, Carrickslaney, Co. Carlow",Carlow,Carrickslaney,,McInerney,,,TRUE,52.75415,-6.73249
+B6-0005,ESB Networks (National Ducting & Framework Contract),"B6-0005 - Vetra, Kilbarry, Co. Waterford (B5-0628)",Waterford,Kilbarry,,Vetra,,,TRUE,52.2372618,-7.1379096
+B6-0006,ESB Networks (National Ducting & Framework Contract),"B6-0006 - Dowling, Kilbride, Co. Carlow",Carlow,Kilbride,,Dowling,,,TRUE,52.72197,-6.750484
+B6-0007,ESB Networks (National Ducting & Framework Contract),"B6-0007 - Murphy TM, Clonmore, Co. Wicklow",Wicklow,Clonmore,,Murphy TM,,,TRUE,52.822359,-6.529367
+B6-0008,ESB Networks (National Ducting & Framework Contract),"B6-0008 - Prior Park, Clonmel, Co. Tipperary (B4-0005)",Tipperary,Clonmel,,Prior Park,,,TRUE,52.360946,-7.7023675
+B6-0009,ESB Networks (National Ducting & Framework Contract),"B6-0009 - ESB Innovation, Ballynoran, Co. Tipperary (B5-1203)",Tipperary,Ballynoran,,ESB Innovation,,,TRUE,52.358214,-7.4874608
+B6-0010,ESB Networks (National Ducting & Framework Contract),"B6-0010 - DFL, Kilbarry, Co. Waterford (B5-1141)",Waterford,Kilbarry,,DFL,,,TRUE,52.228787,-7.130076

@@ -1,0 +1,17 @@
+# Use LF in the repository for all text files (consistent across Windows, Mac, Linux).
+# On Windows, Git will still handle your working copy according to core.autocrlf if set.
+* text=auto eol=lf
+
+# Explicit binaries (do not normalize)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+*.bin binary

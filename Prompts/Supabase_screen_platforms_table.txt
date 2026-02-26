@@ -1,0 +1,69 @@
+Create a Supabase table to categorise which app screens are included in each platform build (Android, iOS, Web, Windows). This table is the source of truth for "screen availability per platform". Whenever a screen is created or removed in the Flutter app, this table should be updated to stay in sync.
+
+REQUIREMENTS
+
+1. Table name: screen_platforms
+
+2. Columns:
+   - id: uuid, primary key, default gen_random_uuid()
+   - screen_id: text, unique, not null
+     - Stable identifier for the screen (e.g. messages, new_message, message_log, message_template, clock_in_out, dashboard). Use snake_case. One row per screen.
+   - display_name: text, nullable
+     - Human-readable name (e.g. "Message Log", "New Message") for admin UIs or reports.
+   - android: boolean, not null, default true
+     - Include this screen in Android builds (true) or exclude (false).
+   - ios: boolean, not null, default true
+     - Include this screen in iOS builds (true) or exclude (false).
+   - web: boolean, not null, default true
+     - Include this screen in Web builds (true) or exclude (false).
+   - windows: boolean, not null, default true
+     - Include this screen in Windows builds (true) or exclude (false).
+   - lite: boolean, not null, default false
+     - Include this screen in the "lite" mobile build (bare minimum for basic users). When true, the screen appears in the lite app (lib/lite_mobile.dart).
+   - created_at: timestamptz, default now()
+   - updated_at: timestamptz, default now()
+
+3. Indexes:
+   - Unique on screen_id (already enforced by unique constraint).
+   - Optional: index on (android, ios, web, windows) if you need to query "all screens for platform X".
+
+4. Trigger:
+   - Update updated_at to now() on every UPDATE (before update trigger).
+
+5. Row Level Security (RLS):
+   - Enable RLS on the table.
+   - Policy: allow SELECT for authenticated users (so the app can read which screens are on which platform).
+   - Policy: allow INSERT, UPDATE, DELETE only for service_role or for a dedicated admin role (e.g. users with an is_admin or similar), so that only admins or backend jobs can change screen availability.
+   - If you use an admin role, define it clearly (e.g. "role = 'admin'" or "exists (select 1 from users_data where user_id = auth.uid() and role = 'admin')").
+
+6. Process (document in migration or project docs):
+   - When a new screen is added to the Flutter app: insert a row into screen_platforms with the appropriate screen_id and set android, ios, web, windows as required (e.g. desktop-only screens: android=false, ios=false, web=true, windows=true).
+   - When a screen is removed from the Flutter app: delete the row (or set a deleted_at if you prefer soft delete) for that screen_id.
+   - The Flutter app (or a CI script) can use this table to know which screens to include in each platform build; the app may also sync this data into a local config file for build-time use.
+
+7. Seed data (optional but recommended):
+   - Insert initial rows for all current app screens so the table is usable immediately. Prefer setting Messenger-related screens (new_message, message_log, message_template) to android=false, ios=false, web=true, windows=true so they are desktop/web only; all other screens can be true for all four platforms initially.
+
+Example seed row for a desktop-only screen:
+  screen_id: 'message_log'
+  display_name: 'Message Log'
+  android: false
+  ios: false
+  web: true
+  windows: true
+
+Example seed row for a screen on all platforms:
+  screen_id: 'messages'
+  display_name: 'Messages'
+  android: true
+  ios: true
+  web: true
+  windows: true
+
+Deliverables:
+- SQL migration file(s) that create the table, indexes, trigger, RLS policies, and optional seed data.
+- Short comment or doc in the migration describing the "when screen is created or removed, update this table" process.
+
+NOTE: A ready-to-run migration is also provided in this project at:
+  supabase/migrations/20260123000000_screen_platforms.sql
+You can use that as-is or adapt it. The Flutter app keeps a local mirror in lib/config/platform_screens.dart; when you add or remove screens, update both the Supabase table and that config (so the mobile build and menu stay correct).

@@ -1,0 +1,190 @@
+Sub MovePhotosFromDropbox()
+    '
+    ' Move photos from Dropbox to file server based on folder structure in "Meadows Fort" table
+    '
+    
+    Dim ws As Worksheet
+    Dim tbl As ListObject
+    Dim lastRow As Long
+    Dim i As Long
+    Dim sourceBase As String
+    Dim destBase As String
+    Dim mainFolder As String
+    Dim subFolder1 As String
+    Dim subFolder2 As String
+    Dim sourcePath As String
+    Dim destPath As String
+    Dim projectNameWithLocation As String
+    Dim fileCount As Long
+    Dim totalFilesMoved As Long
+    Dim totalFoldersProcessed As Long
+    Dim fso As Object
+    Dim sourceFolder As Object
+    Dim destFolder As Object
+    Dim file As Object
+    
+    ' Set up paths
+    sourceBase = "C:\Users\robie\Dropbox"
+    destBase = "R:\E"
+    
+    ' Get the "Meadows Fort" worksheet with the table
+    On Error Resume Next
+    Set ws = ActiveWorkbook.Worksheets("Meadows Fort")
+    If ws Is Nothing Then
+        MsgBox "Error: Could not find the 'Meadows Fort' worksheet. Please check the sheet name.", vbCritical
+        Exit Sub
+    End If
+    On Error GoTo 0
+    
+    ' Get the table
+    On Error Resume Next
+    Set tbl = ws.ListObjects("Meadows_Fort") ' Excel converts spaces to underscores in table names
+    If tbl Is Nothing Then
+        ' Try alternative name
+        Set tbl = ws.ListObjects("MeadowsFort")
+    End If
+    If tbl Is Nothing Then
+        MsgBox "Error: Could not find the 'Meadows Fort' table. Please check the table name.", vbCritical
+        Exit Sub
+    End If
+    On Error GoTo 0
+    
+    ' Get last row from cell D1 or use table's data range
+    On Error Resume Next
+    lastRow = ws.Range("D1").Value
+    If lastRow = 0 Or lastRow < 2 Then
+        ' Fall back to table's last row
+        lastRow = tbl.ListRows.Count
+    End If
+    On Error GoTo 0
+    
+    ' Create FileSystemObject
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    
+    ' Initialize counters
+    totalFilesMoved = 0
+    totalFoldersProcessed = 0
+    
+    ' Process each row in the table
+    ' Note: ListRows collection is 1-based, and we'll limit to lastRow from D1
+    Dim maxRows As Long
+    maxRows = tbl.ListRows.Count
+    ' If lastRow is specified and valid, use the minimum of lastRow and table count
+    If lastRow > 0 Then
+        If lastRow < maxRows Then
+            maxRows = lastRow
+        End If
+    End If
+    
+    ' Show progress
+    Application.ScreenUpdating = False
+    Application.DisplayAlerts = False
+    
+    For i = 1 To maxRows
+        ' Get folder structure from columns A, B, C (using ListRows collection)
+        On Error Resume Next
+        If IsEmpty(tbl.ListRows(i).Range(1).Value) Then
+            mainFolder = ""
+        Else
+            mainFolder = Trim(CStr(tbl.ListRows(i).Range(1).Value)) ' Column A
+        End If
+        
+        If IsEmpty(tbl.ListRows(i).Range(2).Value) Then
+            subFolder1 = ""
+        Else
+            subFolder1 = Trim(CStr(tbl.ListRows(i).Range(2).Value)) ' Column B
+        End If
+        
+        If IsEmpty(tbl.ListRows(i).Range(3).Value) Then
+            subFolder2 = ""
+        Else
+            subFolder2 = Trim(CStr(tbl.ListRows(i).Range(3).Value)) ' Column C
+        End If
+        On Error GoTo 0
+        
+        ' Skip if main folder is empty or is header
+        If mainFolder = "" Or mainFolder = "Main Folder Description" Or mainFolder = "Main Folder" Then
+            GoTo NextRow
+        End If
+        
+        ' Build source path
+        ' Source: C:\Users\robie\Dropbox\[Main Folder]\[Sub Folder 1]\[Sub Folder 2 if exists]
+        sourcePath = sourceBase & "\" & mainFolder
+        If subFolder1 <> "" And subFolder1 <> "Sub Folder Description" Then
+            sourcePath = sourcePath & "\" & subFolder1
+        End If
+        If subFolder2 <> "" And subFolder2 <> "Sub Folder Description" Then
+            sourcePath = sourcePath & "\" & subFolder2
+        End If
+        
+        ' Build destination path
+        ' Destination: R:\E\[Project Name with Location]\5. Photos\[Sub Folder 1]\[Sub Folder 2 if exists]
+        ' Note: Project name in destination includes location: "E4-0002 - Meadows Fort Housing Development, Graiguecullen, Co. Carlow"
+        ' We need to construct this from the main folder name
+        projectNameWithLocation = mainFolder & ", Graiguecullen, Co. Carlow"
+        
+        destPath = destBase & "\" & projectNameWithLocation & "\5. Photos"
+        If subFolder1 <> "" And subFolder1 <> "Sub Folder Description" Then
+            destPath = destPath & "\" & subFolder1
+        End If
+        If subFolder2 <> "" And subFolder2 <> "Sub Folder Description" Then
+            destPath = destPath & "\" & subFolder2
+        End If
+        
+        ' Check if source folder exists
+        If Not fso.FolderExists(sourcePath) Then
+            Debug.Print "Source folder not found: " & sourcePath
+            GoTo NextRow
+        End If
+        
+        ' Create destination folder if it doesn't exist
+        If Not fso.FolderExists(destPath) Then
+            On Error Resume Next
+            fso.CreateFolder destPath
+            If Err.Number <> 0 Then
+                Debug.Print "Error creating destination folder: " & destPath & " - " & Err.Description
+                GoTo NextRow
+            End If
+            On Error GoTo 0
+        End If
+        
+        ' Get source folder
+        Set sourceFolder = fso.GetFolder(sourcePath)
+        
+        ' Move all files from source to destination
+        fileCount = 0
+        For Each file In sourceFolder.Files
+            On Error Resume Next
+            ' Move file, overwrite if exists
+            fso.MoveFile file.Path, destPath & "\" & file.Name
+            If Err.Number = 0 Then
+                fileCount = fileCount + 1
+            Else
+                Debug.Print "Error moving file: " & file.Path & " - " & Err.Description
+            End If
+            On Error GoTo 0
+        Next file
+        
+        If fileCount > 0 Then
+            totalFilesMoved = totalFilesMoved + fileCount
+            totalFoldersProcessed = totalFoldersProcessed + 1
+            Debug.Print "Moved " & fileCount & " file(s) from: " & sourcePath
+        End If
+        
+NextRow:
+    Next i
+    
+    ' Restore screen updating
+    Application.ScreenUpdating = True
+    Application.DisplayAlerts = True
+    
+    ' Show summary
+    MsgBox "Move operation completed!" & vbCrLf & vbCrLf & _
+           "Folders processed: " & totalFoldersProcessed & vbCrLf & _
+           "Total files moved: " & totalFilesMoved, vbInformation, "Move Photos Complete"
+    
+    ' Clean up
+    Set fso = Nothing
+    Set sourceFolder = Nothing
+    Set file = Nothing
+End Sub

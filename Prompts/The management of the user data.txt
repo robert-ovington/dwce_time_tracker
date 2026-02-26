@@ -1,0 +1,254 @@
+The management of the user data in Supabase is split into three different tables:
+
+Here is auth.Users in Raw JSON for test user:
+{
+  "id": "711f7695-b514-4c2f-943d-9c630d7a53a0",
+  "email": "robert.dwce@gmail.com",
+  "banned_until": null,
+  "created_at": "2025-12-07 00:11:07.170268+00",
+  "confirmed_at": "2025-12-07 00:11:07.20524+00",
+  "confirmation_sent_at": null,
+  "is_anonymous": false,
+  "is_sso_user": false,
+  "invited_at": null,
+  "last_sign_in_at": "2025-12-07 09:47:09.479404+00",
+  "phone": null,
+  "raw_app_meta_data": {
+    "provider": "email",
+    "providers": [
+      "email"
+    ]
+  },
+  "raw_user_meta_data": {
+    "email_verified": true
+  },
+  "updated_at": "2025-12-07 09:47:09.500357+00",
+  "providers": [
+    "email"
+  ]
+}
+
+Sensitive data belonging to the user is stored in public.users_setup:
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "users_setup",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id"],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Primary numeric identifier (bigint identity)."
+    },
+    "user_id": {
+      "type": ["string", "null"],
+      "format": "uuid",
+      "description": "FK to auth.users.id (UUID)."
+    },
+    "display_name": {
+      "type": ["string", "null"],
+      "description": "Unique display name for the user."
+    },
+    "role": {
+      "type": ["string", "null"],
+      "enum": [
+        "Admin",
+        "Manager",
+        "Supervisor",
+        "PICW",
+        "Driver",
+        "Fitter",
+        "Mechanic",
+        "User",
+        "Subcontractor",
+        "External"
+      ],
+      "description": "User role enum."
+    },
+    "security": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "maximum": 9,
+      "description": "Security level integer between 1 and 9 inclusive."
+    },
+    "created_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Record creation timestamp (server-generated)."
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Record updated timestamp (server-generated)."
+    }
+  }
+}
+
+Non-sensitive data belonging to the user is stored in public.users_data:
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "users_data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F-]{36}$",
+      "description": "Primary UUID identifier (gen_random_uuid())."
+    },
+    "user_id": {
+      "type": ["string", "null"],
+      "format": "uuid",
+      "description": "Auth user UUID (foreign key to auth.users.id)."
+    },
+    "display_name": {
+      "type": ["string", "null"],
+      "description": "User display name.",
+      "maxLength": 255
+    },
+    "terms_accepted_date": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Timestamp when terms were accepted (timestamptz)."
+    },
+    "terms_version_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Date of terms version accepted."
+    },
+    "home_latitude": {
+      "type": ["number", "null"],
+      "minimum": -90,
+      "maximum": 90,
+      "description": "Home latitude (-90 to 90)."
+    },
+    "home_longitude": {
+      "type": ["number", "null"],
+      "minimum": -180,
+      "maximum": 180,
+      "description": "Home longitude (-180 to 180)."
+    },
+    "show_project": {
+      "type": ["boolean", "null"],
+      "description": "UI flag: show project."
+    },
+    "show_fleet": {
+      "type": ["boolean", "null"],
+      "description": "UI flag: show fleet."
+    },
+    "show_allowances": {
+      "type": ["boolean", "null"],
+      "description": "UI flag: show allowances."
+    },
+    "show_comments": {
+      "type": ["boolean", "null"],
+      "description": "UI flag: show comments."
+    },
+    "concrete_mix_lorry": {
+      "type": ["boolean", "null"],
+      "description": "Permission/flag for concrete mix lorry."
+    },
+    "reinstatement_crew": {
+      "type": ["boolean", "null"],
+      "description": "Permission/flag for reinstatement crew."
+    },
+    "cable_pulling": {
+      "type": ["boolean", "null"],
+      "description": "Permission/flag for cable pulling."
+    },
+    "is_mechanic": {
+      "type": ["boolean", "null"],
+      "description": "Flag if user is a mechanic."
+    },
+    "is_public": {
+      "type": ["boolean", "null"],
+      "description": "Flag if user is public."
+    },
+    "is_active": {
+      "type": ["boolean", "null"],
+      "description": "Flag if user is active.",
+      "default": true
+    },
+    "stock_location": {
+      "type": ["string", "null"],
+      "description": "User stock location.",
+      "maxLength": 255
+    },
+    "project_1": { "type": ["string", "null"], "maxLength": 255 },
+    "project_2": { "type": ["string", "null"], "maxLength": 255 },
+    "project_3": { "type": ["string", "null"], "maxLength": 255 },
+    "project_4": { "type": ["string", "null"], "maxLength": 255 },
+    "project_5": { "type": ["string", "null"], "maxLength": 255 },
+    "project_6": { "type": ["string", "null"], "maxLength": 255 },
+    "project_7": { "type": ["string", "null"], "maxLength": 255 },
+    "project_8": { "type": ["string", "null"], "maxLength": 255 },
+    "project_9": { "type": ["string", "null"], "maxLength": 255 },
+    "project_10": { "type": ["string", "null"], "maxLength": 255 },
+    "fleet_1": { "type": ["string", "null"], "maxLength": 255 },
+    "fleet_2": { "type": ["string", "null"], "maxLength": 255 },
+    "fleet_3": { "type": ["string", "null"], "maxLength": 255 },
+    "fleet_4": { "type": ["string", "null"], "maxLength": 255 },
+    "fleet_5": { "type": ["string", "null"], "maxLength": 255 },
+    "fleet_6": { "type": ["string", "null"], "maxLength": 255 },
+    "monday_start_time": {
+      "type": ["string", "null"],
+      "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$",
+      "description": "Time (HH:MM[:SS]) for monday start."
+    },
+    "monday_finish_time": {
+      "type": ["string", "null"],
+      "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$"
+    },
+    "monday_break_1_start": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "monday_break_1_finish": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "monday_break_2_start": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "monday_break_2_finish": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "tuesday_start_time": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "tuesday_finish_time": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "tuesday_break_1_start": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "tuesday_break_1_finish": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "tuesday_break_2_start": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "tuesday_break_2_finish": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "wednesday_start_time": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "wednesday_finish_time": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "wednesday_break_1_start": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "wednesday_break_1_finish": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "wednesday_break_2_start": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "wednesday_break_2_finish": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "thursday_start_time": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "thursday_finish_time": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "thursday_break_1_start": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "thursday_break_1_finish": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "thursday_break_2_start": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "thursday_break_2_finish": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "friday_start_time": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "friday_finish_time": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "friday_break_1_start": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "friday_break_1_finish": { "type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):?([0-5]\\d)?$" },
+    "created_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Record creation timestamp (timestamptz)."
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Record updated timestamp (timestamptz)."
+    },
+    "forename": {
+      "type": ["string", "null"],
+      "description": "User forename."
+    },
+    "surname": {
+      "type": ["string", "null"],
+      "description": "User surname."
+    },
+    "initials": {
+      "type": ["string", "null"],
+      "description": "User initials.",
+      "maxLength": 10
+    }
+  }
+}

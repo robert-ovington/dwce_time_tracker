@@ -1,0 +1,21 @@
+Revised role list and their default security level
+Role,Security
+Admin,1
+Manager,2
+Foreman,3
+Supervisor,3
+Crew Leader,4
+Engineer,4
+Technical Operative,5
+Skilled Operative,5
+Excavator/Truck Operative,5
+Truck Operative,5
+Semi-skilled Operative,6
+Basic Operative,6
+Excavator Operative,6
+Pipe Layer,6
+Mechanic,6
+Miscellaneous,6
+Subcontractor,7
+External,8
+Visitor,9

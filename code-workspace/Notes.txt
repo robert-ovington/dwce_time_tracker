@@ -1,0 +1,5 @@
+Blue: 	#0081FB
+Yellow: #FEFE00
+
+Light Blue: #BADDFF
+Dark Blue: #005AB0

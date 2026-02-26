@@ -1,0 +1,83 @@
+﻿project_number,client_name,project_name,county,town,townland,address,description_of_work,completion_date,is_active,latitude,longitude
+A5-0001,D.W.C.E. Ltd. (Overheads A),"A5-0001 - Job List A, Overheads, ",,Overheads,,Job List A,,,TRUE,,
+A5-0002,D.W.C.E. Ltd. (Overheads A),"A5-0002 - Skeard Compound, Kilmacow, Co. Kilkenny (A4-0248)",Kilkenny,Kilmacow,,Skeard Compound,,,TRUE,52.317448,-7.155924
+A5-0010,Landton Construction Ltd,"A5-0010 - Carrig Glen, Calverstown, Co. Kildare",Kildare,Calverstown,,Carrig Glen,Installation of Pipework & Fittings,,TRUE,53.082063,-6.801958
+A5-0014,SE Construction (Kent) Ltd,"A5-0014 - Development Works (Phase 2), Kilmeaden, Co. Waterford (A4-0014)",Waterford,Kilmeaden,,Development Works (Phase 2),,2025-07-26 00:00:00,TRUE,52.228169,-7.233545
+A5-0377,Energy Wise Homes Ltd,"A5-0377 - Ballyboggan, Wexford, Co. Wexford",Wexford,Wexford,,Ballyboggan,,,TRUE,52.341746,-6.500021
+A5-0538,Waterford Co. Co. (Water),"A5-0538 - Queens Street, Tramore, Co. Waterford",Waterford,Tramore,,Queens Street,"1.	Break out and tarmac roadway 19m x 6m. Reinstate 
+line marking",2025-12-06 00:00:00,TRUE,52.1617649,-7.150778
+A5-0588,Wicklow Co. Co. (Roads),"A5-0588 - Abbey Grounds, Wicklow, Co. Wicklow",Wicklow,Wicklow,,Abbey Grounds,"Mobilize, Demobilize, Method Statement and Insurances 2. Supply Labour required for laying Kerbing around the grounds. Plant and Material supplied by Wicklow Co Co",2025-10-18 00:00:00,TRUE,52.981778,-6.045857
+A5-0687,Wicklow Co. Co. (Roads),"A5-0687 - Winetavern Manor, Winetavern, Co. Wicklow",Wicklow,Winetavern,,Winetavern Manor,"2.	Excavate in road, install 3no Precast untrapped Gully pot and fit D400",2025-12-06 00:00:00,TRUE,52.9969,-6.6745
+A5-0689,Wicklow Co. Co. (Roads),"A5-0689 - Ballyhook Demense, Ballyhook, Co. Wicklow",Wicklow,Ballyhook,,Ballyhook Demense,"2.	Excavate and install 3no untrapped Gully Pots and fit D400 Lion Gully grating. Connect to 
+Existing 300mm twinwall pipe",2025-12-06 00:00:00,TRUE,53.000234,-6.685481
+A5-0725,Kildare Co. Co. (Water),"A5-0725 - Station 13, Clane, Co. Kildare",Kildare,Clane,,Station 13,Excavate and expose leaking Sluice Valve 100mm. Replace with new. Reinstall manhole ring. And reinstate lawn area,2025-12-06 00:00:00,TRUE,53.2949,-6.6811
+A5-0737,"Adamar Developments Ltd., T.A. Wexford Low Energy Homes","A5-0737 - Hse186-193, Gorey, Co. Wexford",Wexford,Gorey,,Hse186-193,,,TRUE,52.684728,-6.283289
+A5-0754,Capital Surveys Ltd,"A5-0754 - Roches Grove, Clonard, Co. Wexford",Wexford,Clonard,,Roches Grove,,,TRUE,52.330024,-6.494967
+A5-0755,Capital Surveys Ltd,"A5-0755 - Churchview, Blackwater, Co. Wexford",Wexford,Blackwater,,Churchview,,,TRUE,52.449005,-6.353499
+A5-0778,Mythen Construction Ltd.,"A5-0778 - Rosetown, Rosslare, Co. Wexford",Wexford,Rosslare,,Rosetown,water audit,,TRUE,52.268179,-6.38577
+A5-0784,Energy Wise Homes Ltd,"A5-0784 - Hse 34-40, Ballyboggan, Co. Wexford",Wexford,Ballyboggan,,Hse 34-40,,,TRUE,52.343362,-6.500635
+A5-0790,Carlow Co. Co. (Sewerage),"A5-0790 - Council Office, Bagenalstown, Co. Carlow",Carlow,Bagenalstown,,Council Office,"2.	Break out damaged manhole cover and replace with new Brio D400 cover and frame",2025-12-06 00:00:00,TRUE,52.699898,-6.955025
+A5-0803,Wicklow Co. Co. (Roads),"A5-0803 - Drainage, Griffinstown Glen, Co. Wicklow",Wicklow,Griffinstown Glen,,Drainage,"Excavate, install 2m of Aqua drains at Pedestrian Gate. Excavate, install gully pot with D400 Lion gully grating. Excavate across road to open drain. Backfill with leanmix and reinstate with macadam",2025-12-06 00:00:00,TRUE,53.0244,-6.7384
+A5-0807,Marian Spence,"A5-0807 - 8 Rose Court, Portarlington, Co. Laois",Laois,Portarlington,,8 Rose Court,"2.	Set up screeds and pour concrete step at front door 1.2m x 0.740m x 100mm",,TRUE,53.1608,-7.1946
+A5-0814,Carlow Co. Co. (Sewerage),"A5-0814 - Thomas Traynor Rd EM, Tullow, Co. Carlow (A5-0507)",Carlow,Tullow,,Thomas Traynor Rd EM,,,TRUE,52.8074,-6.7484
+A5-0818,Kildare Co. Co. (Water),"A5-0818 - Leak, Graney, Co. Kildare",Kildare,Graney,,Leak,"Description of the works
+Excavate, break out, raise to Road Level and reseal using mastic asphalt",2025-12-13 00:00:00,TRUE,52.901,-6.7867
+A5-0820,Nesselside Builders Ltd,"A5-0820 - Nesselside Mastic, Carlow, Co. Carlow",Carlow,Carlow,,Nesselside Mastic,Mastic,2025-12-06 00:00:00,TRUE,52.834,-6.9039
+A5-0821,Carlow Co. Co. (Water),"A5-0821 - Farm EM, Craan, Co. Carlow",Carlow,Craan,,Farm EM,,2025-12-06 00:00:00,TRUE,52.708492,-6.699513
+A5-0822,Wicklow Co. Co. (Roads),"A5-0822 - Ramp, Valleymount, Co. Wicklow",Wicklow,Valleymount,,Ramp,"Saw-cut, break out and tarmac speed ramp 6m x 5m with 4no sharks teeth line marking",,TRUE,53.1088,-6.5264
+A5-0823,Carlow Co. Co. (Sewerage),"A5-0823 - St.Lazerians St EM, Leighlinbridge, Co. Carlow",Carlow,Leighlinbridge,,St.Lazerians St EM,,2025-12-06 00:00:00,TRUE,52.73615,-6.981037
+A5-0824,Kildare Co. Co. (Water),"A5-0824 - Eyre Street EM, Newbridge, Co. Kildare",Kildare,Newbridge,,Eyre Street EM,"Excavate in road 2m deep, replace section of 150mm Clay pipe with new. Backfill with leanmix and reinstate with macadam",,TRUE,53.1827,-6.7964
+A5-0825,Carlow Co. Co. (Water),"A5-0825 - St.Josephs Rd EM, Carlow, Co. Carlow",Carlow,Carlow,,St.Josephs Rd EM,,,TRUE,52.840621,-6.922896
+A5-0826,Winslow Homes Ltd,"A5-0826 - Hse 258-263, Gorey, Co. Wexford",Wexford,Gorey,,Hse 258-263,,,TRUE,52.684728,-6.283289
+A5-0827,Mimo House Development Ltd,"A5-0827 - Hse 476-479, 397-402, Ard Uisce, Co. Wexford",Wexford,Ard Uisce,,"Hse 476-479, 397-402",,,TRUE,52.315946,-6.473226
+A5-0828,Wicklow Co. Co. (Roads),"A5-0828 - Ballymore Road, Blessington, Co. Wicklow",Wicklow,Blessington,,Ballymore Road,"2.	Saw-cut, break out and re-tarmac patch of tar 4m x 3m to allow water to reach the gully",2025-12-06 00:00:00,TRUE,53.167,-6.5402
+A5-0831,Carlow Co. Co. (Water),"A5-0831 - Res EM, Kildavin, Co. Carlow",Carlow,Kildavin,,Res EM,,2025-12-06 00:00:00,TRUE,52.69629,-6.691719
+A5-0832,Kildare Co. Co. (Water),"A5-0832 - Woodstock Street, Athy, Co. Kildare",Kildare,Athy,,Woodstock Street,,2025-12-06 00:00:00,TRUE,52.9999,-6.9956
+A5-0833,Carlow Co. Co. (Roads),"A5-0833 - Supervalue Pump, Tullow, Co. Carlow",Carlow,Tullow,,Supervalue Pump,Pump,,TRUE,,
+B5-0001,ESB Networks (National Ducting & Framework Contract),"B5-0001 - Job List B, Overheads, ",,Overheads,,Job List B,Overhead,,TRUE,,
+B5-0820,ESB Networks (National Ducting & Framework Contract),"B5-0820 - Cregg Lawn, Carrick-On-Suir, Co. Tipperary",Tipperary,Carrick-On-Suir,,Cregg Lawn,,,TRUE,52.353042,-7.407205
+B5-0836,ESB Networks (National Ducting & Framework Contract),"B5-0836 - Tankfield, Tramore, Co. Waterford",Waterford,Tramore,,Tankfield,,,TRUE,52.166535,-7.1553973
+B5-0837,ESB Networks (National Ducting & Framework Contract),"B5-0837 - Cove Lane, Waterford, Co. Waterford",Waterford,Waterford,,Cove Lane,,2025-11-25 00:00:00,TRUE,52.24835,-7.08468
+B5-0876,ESB Networks (National Ducting & Framework Contract),"B5-0876 - Ph 2 b, Banoge, Co. Wexford",Wexford,Banoge,,Ph 2 b,Duct Laying,,TRUE,52.663929,-6.27781
+B5-1092,ESB Networks (National Ducting & Framework Contract),"B5-1092 - GAA, Coolkenna, Co. Wicklow",Wicklow,Coolkenna,,GAA,,,TRUE,52.77868,-6.621502
+B5-1119,ESB Networks (National Ducting & Framework Contract),"B5-1119 - Jack Whites, Cloghogue, Co. Wicklow",Wicklow,Cloghogue,,Jack Whites,,,TRUE,52.881949,-6.099035
+B5-1141,ESB Networks (National Ducting & Framework Contract),"B5-1141 - DFL, Waterford, Co. Waterford",Waterford,Waterford,,DFL,,,TRUE,52.228787,-7.130076
+B5-1152,ESB Networks (National Ducting & Framework Contract),"B5-1152 - Barna Buildings, Glenealy, Co. Wicklow",Wicklow,Glenealy,,Barna Buildings,,,TRUE,52.95738,-6.166745
+B5-1154,ESB Networks (National Ducting & Framework Contract),"B5-1154 - KDM TM, Ballyguile Beg, Co. Wicklow (B5-1115)",Wicklow,Ballyguile Beg,,KDM TM,,2025-12-06 00:00:00,TRUE,52.960554,-6.05968
+B5-1155,ESB Networks (National Ducting & Framework Contract),"B5-1155 - KDM Civils, Ballyguile Beg, Co. Wicklow",Wicklow,Ballyguile Beg,,KDM Civils,,2025-12-06 00:00:00,TRUE,52.960554,-6.05968
+B5-1161,ESB Networks (National Ducting & Framework Contract),"B5-1161 - Caravan Park, Tara Glen, Co. Wexford",Wexford,Tara Glen,,Caravan Park,,2025-11-24 00:00:00,TRUE,52.668676,-6.21327
+B5-1190,ESB Networks (National Ducting & Framework Contract),"B5-1190 - Smyth, Clonegall, Co. Wexford",Wexford,Clonegall,,Smyth,,2025-12-06 00:00:00,TRUE,52.708,-6.609
+B5-1192,ESB Networks (National Ducting & Framework Contract),"B5-1192 - Whelan TM, Ballyroebuck, Co. Wexford",Wexford,Ballyroebuck,,Whelan TM,,2025-12-06 00:00:00,TRUE,52.657,-6.552
+B5-1195,ESB Networks (National Ducting & Framework Contract),"B5-1195 - Nevilles TM, Stonybatter, Wexford, Co. Wexford",Wexford,Wexford,Stonybatter,Nevilles TM,,2025-12-06 00:00:00,TRUE,52.3458,-6.4896
+B5-1202,ESB Networks (National Ducting & Framework Contract),"B5-1202 - Ballinacoola TM, Templeshanbo, Co. Wexford",Wexford,Templeshanbo,,Ballinacoola TM,,2025-12-06 00:00:00,TRUE,52.589006,-6.679718
+B5-1206,ESB Networks (National Ducting & Framework Contract),"B5-1206 - Ballytegan Civils, Gorey, Co. Wexford (B5-1191)",Wexford,Gorey,,Ballytegan Civils,,2025-12-06 00:00:00,TRUE,52.688136,-6.287356
+B5-1213,ESB Networks (National Ducting & Framework Contract),"B5-1213 - Browne TM, Redmoor, Co. Wexford",Wexford,Redmoor,,Browne TM,,2025-12-06 00:00:00,TRUE,52.2127,-6.6223
+B5-1214,ESB Networks (National Ducting & Framework Contract),"B5-1214 - Davis Rd TM, Clonmel, Co. Tipperary",Tipperary,Clonmel,,Davis Rd TM,,2025-12-06 00:00:00,TRUE,52.357665,-7.681144
+B5-1220,ESB Networks (National Ducting & Framework Contract),"B5-1220 - Mary St EM, Clonmel, Co. Tipperary",Tipperary,Clonmel,,Mary St EM,,2025-12-06 00:00:00,TRUE,52.352042,-7.704075
+B5-1221,ESB Networks (National Ducting & Framework Contract),"B5-1221 - Shackleton, Clonmannan, Co. Wicklow",Wicklow,Clonmannan,,Shackleton,,,TRUE,53.019545,-6.060283
+B5-1223,ESB Networks (National Ducting & Framework Contract),"B5-1223 - Farm EM, Kilmannock, Co. Wexford",Wexford,Kilmannock,,Farm EM,,2025-12-06 00:00:00,TRUE,52.2935,-6.9727
+B5-1225,ESB Networks (National Ducting & Framework Contract),"B5-1225 - St.Patricks TM 2, Wicklow, Co. Wicklow (B5-1210)",Wicklow,Wicklow,,St.Patricks TM 2,,2025-12-06 00:00:00,TRUE,52.9808,-6.0468
+B5-1227,ESB Networks (National Ducting & Framework Contract),"B5-1227 - Coast Guard EM, Kilmore Quay, Co. Wexford",Wexford,Kilmore Quay,,Coast Guard EM,,2025-12-06 00:00:00,TRUE,52.173039,-6.592122
+B5-1228,ESB Networks (National Ducting & Framework Contract),"B5-1228 - William St EM TM, Wexford, Co. Wexford",Wexford,Wexford,,William St EM TM,,2025-12-06 00:00:00,TRUE,52.329832,-6.45209
+B5-1232,ESB Networks (National Ducting & Framework Contract),"B5-1232 - Tankfield, Tramore, Co. Waterford (B5-0836)",Waterford,Tramore,,Tankfield,,,TRUE,52.166535,-7.1553973
+B5-1233,ESB Networks (National Ducting & Framework Contract),"B5-1233 - Upper John St EM, Wexford, Co. Wexford",Wexford,Wexford,,Upper John St EM,,2025-12-06 00:00:00,TRUE,52.335833,-6.462522
+B5-1237,ESB Networks (National Ducting & Framework Contract),"B5-1237 - EM TM, Loughgunnen, Co. Wexford",Wexford,Loughgunnen,,EM TM,,2025-12-06 00:00:00,TRUE,52.262097,-6.515933
+B5-1238,ESB Networks (National Ducting & Framework Contract),"B5-1238 - Quay EM, Clonmel, Co. Tipperary",Tipperary,Clonmel,,Quay EM,,,TRUE,52.352033,-7.704092
+C3-0011,Dunlavin Rationalisation (17-204-036),"C3-0011 - Dunlavin Rationalisation (17-204-036), Dunlavin, Co. Wicklow",Wicklow,Dunlavin,,Dunlavin Rationalisation (17-204-036),Watermain Pipeline from Dunlavin to Brannockstown,,TRUE,53.06186,-6.698378
+C3-0015,17-204-002 - Enniscorthy Water Supply Scheme,"C3-0015 - 17-204-002 - Enniscorthy Water Supply Scheme, Enniscorthy, Co. Wexford",Wexford,Enniscorthy,,17-204-002 - Enniscorthy Water Supply Scheme,"Civil works at intake site, new rising main and upgrade of treatment plant",,TRUE,52.512808,-6.550098
+C4-0002,17-204-043 - Gowran Water Supply Scheme,"C4-0002 - Water Treatment Plant, Gowran, Co. Kilkenny",Kilkenny,Gowran,,Water Treatment Plant,,,TRUE,52.647077,-7.051393
+C4-0003,17-204-040 - Baile na nGall Sewer Upgrade,"C4-0003 - Pumping Station, Baile na nGall, Co. Waterford",Waterford,Baile na nGall,,Pumping Station,,,TRUE,52.050221,-7.582144
+C5-0001,Walsh Quarries & Recycling Ltd,"C5-0001 - Ardristan Quarry, Tullow, Co. Carlow",Carlow,Tullow,,Ardristan Quarry,,,TRUE,52.770989,-6.755913
+C5-0002,Clashwilliam Cable Infrastructure (TR1745),"C5-0002 - Cable Infrastructure (TR1745), Clashwilliam, Co. Kilkenny",Kilkenny,Clashwilliam,,Cable Infrastructure (TR1745),,,TRUE,52.638203,-7.177121
+C5-0003,Abbey Quarter Urban Park & Street,"C5-0003 - Abbey Quarter, Kilkenny, Co. Kilkenny",Kilkenny,Kilkenny,,Abbey Quarter,,,TRUE,52.65672,-7.253755
+C5-0004,Carriglong Solar Farm Ltd,"C5-0004 - Solar Farm, Carriglong, Co. Waterford",Waterford,Carriglong,,Solar Farm,,,TRUE,52.191611,-7.142429
+E4-0001,Walsh Homes,"E4-0001 - Shanrath Housing Development, Athy, Co. Kildare",Kildare,Athy,,Shanrath Housing Development,,,TRUE,52.992772,-6.962825
+E4-0002,Meadows Fort Housing Development,"E4-0002 - Meadows Fort Housing Development, Graiguecullen, Co. Carlow",Carlow,Graiguecullen,,Meadows Fort Housing Development,,,TRUE,52.832187,-6.947767
+W5-4010,D.W.C.E. Ltd. - Concrete Mixing,"W5-4010 - Concrete Mixing, Knocknacree, Co. Kildare",Kildare,Knocknacree,,Concrete Mixing,Processing of materials for the mixing of concrete,,TRUE,,
+W5-4012,D.W.C.E. Ltd. - Concrete Kelly Blocks,"W5-4012 - Kelly Blocks, Knocknacree, Co. Kildare",Kildare,Knocknacree,,Kelly Blocks,,,TRUE,,
+X5-0001,D.W.C.E. Ltd. (Compound),"X5-0001 - Knocknacree (Compound), Castledermot, Co. Kildare",Kildare,Castledermot,,Knocknacree (Compound),,,TRUE,52.878602,-6.813004
+X5-0002,D.W.C.E. Ltd. (Compound),"X5-0002 - Skeard (Compound), Kilmacow, Co. Kilkenny",Kilkenny,Kilmacow,,Skeard (Compound),,,TRUE,52.3174513,-7.1584989
+X5-0003,D.W.C.E. Ltd. (Compound),"X5-0003 - Ardristan (Compound), Tullow, Co. Carlow",Carlow,Tullow,,Ardristan (Compound),,,TRUE,52.770765,-6.756529
+X5-0005,D.W.C.E. Ltd. (Compound),"X5-0005 - Wexford (Compound), Wexford, Co. Wexford",Wexford,Wexford,,Wexford (Compound),,,TRUE,52.342244,-6.487809
+X5-0007,D.W.C.E. Ltd. (Compound),"X5-0007 - Paulstown (Compound), Paulstown, Co. Carlow",Carlow,Paulstown,,Paulstown (Compound),,,TRUE,52.679684,-7.026104
+X5-0008,D.W.C.E. Ltd. (Compound),"X5-0008 - Kilmacktomas (Compound), Kilmacktomas, Co. Waterford",Waterford,Kilmacktomas,,Kilmacktomas (Compound),,,TRUE,52.236678,-7.399358

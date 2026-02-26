@@ -1,0 +1,556 @@
+plant_no,plant_description,short_description,charge_type,clock_unit,has_clock,ticket_1_required,ticket_2_required,category_1,category_2,category_3,category_4,category_5,category_6,is_active
+1,1 - Traffic Cone (1m),Traffic Cone (1m),No.,,,,,,,,,,,TRUE
+10,10 - Lawnmower Gianni Ferrari GTS 220 DW (2021),Lawnmower Gianni Ferrari GTS 220 DW (2021),Hour,,,,,,,,,,,TRUE
+11,11 - Tractor International 784 (NIC 462),Tractor International 784 (NIC 462),Hour,,,,,,,,,,,TRUE
+14,14 - Forflift JCB (96-KE-6232),Forflift JCB (96-KE-6232),Hour,Hours,TRUE,Forklift,,,,,,TRUE,,TRUE
+15,15 - Excavator JCB 3CX (97-MH-3692),Excavator JCB 3CX (97-MH-3692),Hour,Hours,TRUE,Excavator 180,,,TRUE,,,,,TRUE
+18,18 - Excavator JCB 3CX (01-KE-10392),Excavator JCB 3CX (01-KE-10392),Hour,Hours,TRUE,Excavator 180,,,TRUE,,,,,TRUE
+20,20 - Excavator Hitachi EX75-5 (2001),Excavator Hitachi EX75-5 (2001),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+22,22 - Dumper Barford 6 Tonne (99-D-70821),Dumper Barford 6 Tonne (99-D-70821),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+24,24 - Tractor J.D. 6900 (97-KE-7335),Tractor J.D. 6900 (97-KE-7335),Hour,Hours,TRUE,,,TRUE,,,,,,TRUE
+25,25 - Audi A6 (162-WW-1890),Audi A6 (162-WW-1890),Hour,,,,,,,,,,,TRUE
+30,30 - Roller Bomag BW 65H (0.68 Tonne),Roller Bomag BW 65H (0.68 Tonne),Hour,,,,,,,,,,,TRUE
+31,31 - Roadsaw Dimas FS3100D,Roadsaw Dimas FS3100D,Hour,Hours,TRUE,,,,,,,,,TRUE
+33,33 - Tractor Fastrac 8250 (06-KE-9815),Tractor Fastrac 8250 (06-KE-9815),Hour,Hours,TRUE,,,TRUE,,,,,,TRUE
+36,36 - Van Hiace (00-OY-2913),Van Hiace (00-OY-2913),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+38,38 - Tractor Fastrac 8250 (07-KE-5042),Tractor Fastrac 8250 (07-KE-5042),Hour,Hours,TRUE,,,TRUE,,,,,,TRUE
+39,39 - Mercedes Benz GLC 200D (211-KE-1003),Mercedes Benz GLC 200D (211-KE-1003),Hour,,,,,,,,,,,TRUE
+40,40 - Car Audi A4 (05-CN-1256),Car Audi A4 (05-CN-1256),Hour,,,,,,,,,,,TRUE
+41,41 - Tractor J.D. 6920 (06-KE-6143),Tractor J.D. 6920 (06-KE-6143),Hour,Hours,TRUE,,,TRUE,,,,,,TRUE
+43,43 - Jeep Land Rover (141-D-27340),Jeep Land Rover (141-D-27340),Hour,,,,,TRUE,,,,,,TRUE
+47,47 - Traffic Control Stop/Go,Traffic Control Stop/Go,Hour,,,,,,,,,,,TRUE
+48,48 - Mercedes Benz GLC 220D (251-KE-602),Mercedes Benz GLC 220D (251-KE-602),Hour,,,,,,,,,,,TRUE
+49,49 - Traffic Lights Firh (Steel),Traffic Lights Firh (Steel),Hour,,,,,,,,,,,TRUE
+50,50 - Traffic Lights Firh (Steel),Traffic Lights Firh (Steel),Hour,,,,,,,,,,,TRUE
+51,51 - Excavator New Holland E30-2 SR (2007),Excavator New Holland E30-2 SR (2007),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+53,53 - Snow Plough Romaquip,Snow Plough Romaquip,Hour,,,,,,,,,,,TRUE
+54,54 - Snow Plough Bunce,Snow Plough Bunce,Hour,,,,,,,,,,,TRUE
+55,55 - Snow Plough Bunce,Snow Plough Bunce,Hour,,,,,,,,,,,TRUE
+56,56 - Traffic Lights Dobio (Plastic),Traffic Lights Dobio (Plastic),Hour,,,,,,,,,,,TRUE
+57,57 - Traffic Lights Dobio (Plastic),Traffic Lights Dobio (Plastic),Hour,,,,,,,,,,,TRUE
+59,59 - Crusader Mixer Asphalt 18cwt,Crusader Mixer Asphalt 18cwt,Hour,,,,,,,,,,,TRUE
+60,60 - Excavator Case CX225 SR (2007),Excavator Case CX225 SR (2007),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+62,62 - Excavator Case CX75 SR (2008),Excavator Case CX75 SR (2008),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+63,"63 - Water Pump (Towed) 6""","Water Pump (Towed) 6""",Hour,Hours,TRUE,,,,,,,,,TRUE
+65,65 - Van Sprinter CDI 311 (06-D-65977),Van Sprinter CDI 311 (06-D-65977),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+66,66 - Mercedes Benz S350 (132-WD-362),Mercedes Benz S350 (132-WD-362),Hour,,,,,,,,,,,TRUE
+69,69 - Van Hiace (07-OY-3338),Van Hiace (07-OY-3338),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+75,75 - Excavator Case CX50 (2013),Excavator Case CX50 (2013),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+76,76 - Compressor Atlas Copco XAS47 (2013) (2.6 m³/min),Compressor Atlas Copco XAS47 (2013) (2.6 m³/min),Hour,Hours,TRUE,,,,,,TRUE,,,TRUE
+77,77 - Excavator Case CX75 SR (2013),Excavator Case CX75 SR (2013),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+78,78 - Planer Wirtgen W600DC (2007),Planer Wirtgen W600DC (2007),Hour,Hours,TRUE,,,,TRUE,,,,,TRUE
+80,80 - Roller Hamm HD8VV (2011) (1.58 Tonne),Roller Hamm HD8VV (2011) (1.58 Tonne),Hour,Hours,TRUE,,,,,,,,,TRUE
+81,81 - Compressor Atlas Copco XAS47 (2013) (2.6 m³/min),Compressor Atlas Copco XAS47 (2013) (2.6 m³/min),Hour,Hours,TRUE,,,,,,TRUE,,,TRUE
+85,85 - Van Sprinter CDI 311 (08-D 42104),Van Sprinter CDI 311 (08-D 42104),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+94,94 - Anti-Vandal Welfare Unit (24' x 10'),Anti-Vandal Welfare Unit (24' x 10'),Day,,,,,,,,,,,TRUE
+95,95 - Anti-Vandal Office Unit (20' x 10'),Anti-Vandal Office Unit (20' x 10'),Day,,,,,,,,,,,TRUE
+97,97 - Truck Hino Tipper (07-WW-3949),Truck Hino Tipper (07-WW-3949),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+99,99 - Truck DAF FA45 180 Tar Sprayer/Combi (06-C-26909),Truck DAF FA45 180 Tar Sprayer/Combi (06-C-26909),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+100,100 - Excavator Case 590ST (141-KE-3359),Excavator Case 590ST (141-KE-3359),Hour,Hours,TRUE,Excavator 180,,,TRUE,,,,,TRUE
+101,101 - Excavator Case CX145 SD (2014),Excavator Case CX145 SD (2014),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+102,102 - Trench Roller Wacker RTSC2 (1.45 Tonne),Trench Roller Wacker RTSC2 (1.45 Tonne),Hour,Hours,TRUE,,,,,,,,,TRUE
+103,103 - Roller Bomag BW 65H (0.68 Tonne),Roller Bomag BW 65H (0.68 Tonne),Hour,,,,,,,,,,,TRUE
+104,104 - Van Sprinter CDI 313 (11-KE-5645),Van Sprinter CDI 313 (11-KE-5645),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+105,105 - Van Caddy (09-KE-16929),Van Caddy (09-KE-16929),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+107,107 - Van Hiace (08-C-14338),Van Hiace (08-C-14338),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+108,108 - Van Sprinter CDI 313 - (10-KE-17246),Van Sprinter CDI 313 - (10-KE-17246),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+109,109 - Footboard Tricel (1m x 1m),Footboard Tricel (1m x 1m),No.,,,,,,,,,,,TRUE
+110,110 - Road Plates - Steel,Road Plates - Steel,No.,,,,,,,,,,,TRUE
+111,"111 - Anti-Vandal Storage Unit (Towed) (12' x 6'6"")","Anti-Vandal Storage Unit (Towed) (12' x 6'6"")",Day,,,,,,,,,,,TRUE
+112,112 - Silt Curtain 120M,Silt Curtain 120M,Hour,,,,,,,,,,,TRUE
+113,113 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+114,114 - Pedestrian Barrier (2m x 1m),Pedestrian Barrier (2m x 1m),No.,,,,,,,,,,,TRUE
+116,116 - Anti-Vandal Office Unit (24' x 10'),Anti-Vandal Office Unit (24' x 10'),Day,,,,,,,,,,,TRUE
+117,"117 - Pressure Test Pump / 2,000l Bowser","Pressure Test Pump / 2,000l Bowser",Hour,,,,,,,,,,,TRUE
+118,"118 - Anti-Vandal Storage Unit (Towed) (12' x 6'6"")","Anti-Vandal Storage Unit (Towed) (12' x 6'6"")",Day,,,,,,,,,,,TRUE
+119,119 - Site Fuel Pump,Site Fuel Pump,Day,,,,,,,,,,,TRUE
+120,120 - Trench Box 2m High x 3m Long,Trench Box 2m High x 3m Long,Hour,,,,,,,,,,,TRUE
+121,121 - Trench Box 2m High x 3m Long,Trench Box 2m High x 3m Long,Hour,,,,,,,,,,,TRUE
+122,122 - Harris Fence c/w Blocks & Couplers (3.5m x 2.0m),Harris Fence c/w Blocks & Couplers (3.5m x 2.0m),No.,,,,,,,,,,,TRUE
+123,123 - Van Ford Transit Tipper (10-KE-17386),Van Ford Transit Tipper (10-KE-17386),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+124,124 - Truck DAF LF55-250 Tipper/Grab (06-KE-16447),Truck DAF LF55-250 Tipper/Grab (06-KE-16447),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+125,125 - Excavator Kubota U35a3 (2015),Excavator Kubota U35a3 (2015),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+126,126 - Dumper Benford 8 Tonne (03-KE-5084),Dumper Benford 8 Tonne (03-KE-5084),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+128,128 - Pipe Burster Grundoburst 400,Pipe Burster Grundoburst 400,Hour,,,,,,,,,,,TRUE
+130,130 - Inflatable Dam (20m x 1.2m),Inflatable Dam (20m x 1.2m),Hour,,,,,,,,,,,TRUE
+131,131 - Anti-Vandal Office Unit (16' x 7'),Anti-Vandal Office Unit (16' x 7'),Day,,,,,,,,,,,TRUE
+134,134 - Traffic Lights MPB-3400 (Double Battery),Traffic Lights MPB-3400 (Double Battery),Hour,,,,,,,,,,,TRUE
+138,138 - Anti-Vandal Office Unit (30' x 10'),Anti-Vandal Office Unit (30' x 10'),Day,,,,,,,,,,,TRUE
+139,139 - Excavator Kubota KX71-3 (2016),Excavator Kubota KX71-3 (2016),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+140,"140 - Welfare Combi Unit (2003) (12' x 7'6"")","Welfare Combi Unit (2003) (12' x 7'6"")",Day,,,,,,,,,,,TRUE
+141,141 - Van Ford Transit Tipper (12-KE-4780),Van Ford Transit Tipper (12-KE-4780),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+142,142 - Excavator Kubota KX71-3 (2016),Excavator Kubota KX71-3 (2016),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+143,143 - Truck DAF LF45 180 Tipper (08-KE-17340),Truck DAF LF45 180 Tipper (08-KE-17340),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+146,"146 - Sludge Pump 6""","Sludge Pump 6""",Hour,Hours,TRUE,,,,,,,,,TRUE
+147,147 - Storage Container (40' x 8'),Storage Container (40' x 8'),Day,,,,,,,,,,,TRUE
+148,148 - Manhole Box 3.0m (L) x 2.4m (H),Manhole Box 3.0m (L) x 2.4m (H),Hour,,,,,,,,,,,TRUE
+149,149 - Excavator Kubota U27-4 (2016),Excavator Kubota U27-4 (2016),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+150,150 - Drag Box 5.1m x 2.4m,Drag Box 5.1m x 2.4m,Hour,,,,,,,,,,,TRUE
+151,151 - Truck Iveco 140E25 4WD/Crane (09-KE-17303),Truck Iveco 140E25 4WD/Crane (09-KE-17303),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+152,152 - VMS Sign (2.4m x 1.2m),VMS Sign (2.4m x 1.2m),Day,,,,,,,,,,,TRUE
+153,153 - VMS Sign (2.4m x 1.2m),VMS Sign (2.4m x 1.2m),Day,,,,,,,,,,,TRUE
+154,154 - Van Sprinter CDI 313 (141-KE-3706),Van Sprinter CDI 313 (141-KE-3706),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+155,155 - Traffic Lights Diabolux (Plastic) (2017),Traffic Lights Diabolux (Plastic) (2017),Hour,,,,,,,,,,,TRUE
+156,156 - Traffic Lights Diabolux (Plastic) (2017),Traffic Lights Diabolux (Plastic) (2017),Hour,,,,,,,,,,,TRUE
+157,157 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+158,158 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+159,159 - Van Caddy (131-KE-3359),Van Caddy (131-KE-3359),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+160,160 - Van Sprinter Dropside CDI 313 (151-KE-4590),Van Sprinter Dropside CDI 313 (151-KE-4590),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+161,161 - Van Sprinter Dropside CDI 313 (151-KE-4613),Van Sprinter Dropside CDI 313 (151-KE-4613),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+162,162 - Planer Wirtgen W500DC (1997),Planer Wirtgen W500DC (1997),Hour,Hours,TRUE,,,,TRUE,,,,,TRUE
+163,163 - Lighting Tower SMC TL35 (2006),Lighting Tower SMC TL35 (2006),Day,Hours,TRUE,,,,,,,,,TRUE
+164,164 - Excavator Case CX135sr (2008),Excavator Case CX135sr (2008),Hour,,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+165,165 - Traffic Lights MPB-3400 (Single Battery),Traffic Lights MPB-3400 (Single Battery),Hour,,,,,,,,,,,TRUE
+166,166 - Traffic Lights MPB-3400 (Single Battery),Traffic Lights MPB-3400 (Single Battery),Hour,,,,,,,,,,,TRUE
+167,167 - Traffic Lights MPB-3400 (Single Battery),Traffic Lights MPB-3400 (Single Battery),Hour,,,,,,,,,,,TRUE
+169,169 - Traffic Lights MPB-3400 (Single Battery),Traffic Lights MPB-3400 (Single Battery),Hour,,,,,,,,,,,TRUE
+170,170 - Nissan Patrol (06-CE-1569),Nissan Patrol (06-CE-1569),Hour,,TRUE,,,,,,,,,TRUE
+173,173 - Scissors Lift - Genie GS-1932 (2006),Scissors Lift - Genie GS-1932 (2006),Hour,,,MEWP - Mobile Elevated Work Platform,,,,,,TRUE,,TRUE
+174,174 - Excavator Kubota U35a3 (2017),Excavator Kubota U35a3 (2017),Hour,Hours,TRUE,,,,TRUE,,,,,TRUE
+175,175 - Van Sprinter Dropside CDI 313 (151-KE-4873),Van Sprinter Dropside CDI 313 (151-KE-4873),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+176,176 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+177,177 - Dumper Thwaites 9 Tonne (11-KE-7486),Dumper Thwaites 9 Tonne (11-KE-7486),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+178,178 - Excavator Kubota U48-4 (2018),Excavator Kubota U48-4 (2018),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+179,179 - Dumper Thwaites 9 Tonne (10-KE-18435),Dumper Thwaites 9 Tonne (10-KE-18435),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+180,180 - Van Sprinter CDI 314 (171-KE-4948),Van Sprinter CDI 314 (171-KE-4948),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+181,181 - Van Caddy (141-D-21419),Van Caddy (141-D-21419),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+182,182 - Truck DAF CF75-310 c/w Hotbox (09-KE-17928),Truck DAF CF75-310 c/w Hotbox (09-KE-17928),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+183,183 - Anti-Vandal Welfare Unit (24' x 9'),Anti-Vandal Welfare Unit (24' x 9'),Day,,,,,,,,,,,TRUE
+184,184 - Excavator Case CX235Csr (2014),Excavator Case CX235Csr (2014),Hour,,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+186,186 - Roller JCB Vibromax VM132D (12-C-9433) (13 tonne),Roller JCB Vibromax VM132D (12-C-9433) (13 tonne),Hour,Hours,TRUE,,,,,,,,,TRUE
+187,187 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+188,188 - Anti-Vandal Welfare Unit (24' x 9'),Anti-Vandal Welfare Unit (24' x 9'),Day,,,,,,,,,,,TRUE
+190,190 - Porta Gantry c/w 2m Beam,Porta Gantry c/w 2m Beam,Hour,,,,,,,,,,,TRUE
+191,191 - Loading Shovel Volvo L60E (06-KE-16731),Loading Shovel Volvo L60E (06-KE-16731),Hour,Hours,TRUE,,,TRUE,,,,,,TRUE
+192,192 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+193,193 - Generator CAT (2018),Generator CAT (2018),Hour,Hours,TRUE,,,,,,,,,TRUE
+194,194 - Toyota Hilux (152-KE-2746),Toyota Hilux (152-KE-2746),Hour,,TRUE,,,,,,,,,TRUE
+195,195 - Van Sprinter CDI 313 (161-KE-5960),Van Sprinter CDI 313 (161-KE-5960),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+196,196 - Van Sprinter CDI 314 (172-KE-2262),Van Sprinter CDI 314 (172-KE-2262),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+197,197 - Dumper Thwaites 9 Tonne (12-KE-6243),Dumper Thwaites 9 Tonne (12-KE-6243),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+198,198 - Mobile Tower 3.73m x 2.0m x 0.7m (2019),Mobile Tower 3.73m x 2.0m x 0.7m (2019),Hour,,,,,,,,,,,TRUE
+199,199 - Dumper Thwaites 9 Tonne (12-KE-6343),Dumper Thwaites 9 Tonne (12-KE-6343),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+200,200 - Van Sprinter Dropside CDI 313 (142-KE-2677),Van Sprinter Dropside CDI 313 (142-KE-2677),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+202,202 - Van Sprinter Dropside CDI 313 (152-KE-2985),Van Sprinter Dropside CDI 313 (152-KE-2985),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+203,203 - Excavator Kubota U55-4 (2019),Excavator Kubota U55-4 (2019),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+204,204 - Truck DAF LF45 180 Tipper/Grab (132-KE-2270),Truck DAF LF45 180 Tipper/Grab (132-KE-2270),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+205,205 - Office Unit (40' x 12'),Office Unit (40' x 12'),Day,,,,,,,,,,,TRUE
+206,206 - Van Toyota Auris (162-D-9743),Van Toyota Auris (162-D-9743),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+207,207 - Teleporter JCB 540-140 (201-KE-426),Teleporter JCB 540-140 (201-KE-426),Hour,Hours,TRUE,Telescopic Handler,,TRUE,,,,,,TRUE
+208,208 - Galvanised Steel Hoarding (2m x 2m),Galvanised Steel Hoarding (2m x 2m),Day,,,,,TRUE,,,,,TRUE,TRUE
+209,209 - Van Toyota Auris (192-D-18517),Van Toyota Auris (192-D-18517),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+210,210 - Excavator Volvo EW140D (141-KE-5310),Excavator Volvo EW140D (141-KE-5310),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+211,211 - Excavator Case CX245D (2020),Excavator Case CX245D (2020),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+212,212 - Bunded Diesel Tank 900 Litre (2020),Bunded Diesel Tank 900 Litre (2020),Hour,,,,,,,,,,,TRUE
+213,213 - Toyota Hilux (171-KE-5528),Toyota Hilux (171-KE-5528),Hour,,TRUE,,,,,,,,,TRUE
+214,214 - Van Toyota Auris (162-D-15167),Van Toyota Auris (162-D-15167),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+215,215 - Truck DAF LF55 Road Sweeper (132-KE-2356),Truck DAF LF55 Road Sweeper (132-KE-2356),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+216,216 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+217,217 - Van Sprinter CDI 314 (171-KE-5537),Van Sprinter CDI 314 (171-KE-5537),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+218,218 - Van Sprinter CDI 314 (171-KE-5544),Van Sprinter CDI 314 (171-KE-5544),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+219,219 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+220,220 - Roller Bomag BW120AD-4 (2011) (2.60 Tonne),Roller Bomag BW120AD-4 (2011) (2.60 Tonne),Hour,Hours,TRUE,,,,,,,,,TRUE
+221,221 - Van Toyota Auris (191-RN-862),Van Toyota Auris (191-RN-862),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+222,222 - Truck DAF LF45 180 Tipper/Grab (11-KE-8141),Truck DAF LF45 180 Tipper/Grab (11-KE-8141),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+223,223 - Office Unit (20' x 10'),Office Unit (20' x 10'),Day,,,,,,,,,,,TRUE
+224,224 - Office Unit (40' x 12'),Office Unit (40' x 12'),Day,,,,,,,,,,,TRUE
+225,225 - Generator CGM (2018),Generator CGM (2018),Hour,Hours,TRUE,,,,,,,,,TRUE
+226,226 - Truck Scania P450 Tipper/Grab (202-KE-768),Truck Scania P450 Tipper/Grab (202-KE-768),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+227,227 - Truck Scania P450 Tipper/Grab (202-KE-769),Truck Scania P450 Tipper/Grab (202-KE-769),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+228,228 - Van Toyota Auris (161-D-8057),Van Toyota Auris (161-D-8057),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+229,229 - Office Unit (20' x 10'),Office Unit (20' x 10'),Day,,,,,,,,,,,TRUE
+230,230 - Excavator Kubota U17-3 (2020),Excavator Kubota U17-3 (2020),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+231,231 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+232,232 - Van Sprinter CDI 314 (182-KE-2357),Van Sprinter CDI 314 (182-KE-2357),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+233,233 - Van Sprinter Dropside CDI 313 (142-KE-2926),Van Sprinter Dropside CDI 313 (142-KE-2926),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+234,234 - Van Sprinter CDI 314 (182-KE-2350),Van Sprinter CDI 314 (182-KE-2350),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+235,235 - Van Vito CDI 111 (172-KE-2563),Van Vito CDI 111 (172-KE-2563),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+236,236 - Van Sprinter Dropside CDI 314 (171-KE-5954),Van Sprinter Dropside CDI 314 (171-KE-5954),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+237,237 - Dumper Thwaites 9 Tonne (131-KE-4579),Dumper Thwaites 9 Tonne (131-KE-4579),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+238,238 - Dumper Thwaites 9 Tonne (131-KE-4577),Dumper Thwaites 9 Tonne (131-KE-4577),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+239,239 - Excavator Kubota KX030-4 (2020),Excavator Kubota KX030-4 (2020),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+240,240 - Truck DAF LF150 Tipper (161-KE-7123),Truck DAF LF150 Tipper (161-KE-7123),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+241,241 - Anti-Vandal Office Unit (20' x 10'),Anti-Vandal Office Unit (20' x 10'),Day,,,,,,,,,,,TRUE
+242,242 - Loading Shovel Volvo L120G (131-KE-XXXX),Loading Shovel Volvo L120G (131-KE-XXXX),Hour,Hours,TRUE,,,TRUE,,,,,,TRUE
+243,243 - Traffic Lights MPB-1400 (Single Battery),Traffic Lights MPB-1400 (Single Battery),Hour,,,,,,,,,,,TRUE
+244,244 - Traffic Lights MPB-1400 (Single Battery),Traffic Lights MPB-1400 (Single Battery),Hour,,,,,,,,,,,TRUE
+245,245 - Traffic Lights MPB-1400 (Single Battery),Traffic Lights MPB-1400 (Single Battery),Hour,,,,,,,,,,,TRUE
+246,246 - Traffic Lights MPB-1400 (Single Battery),Traffic Lights MPB-1400 (Single Battery),Hour,,,,,,,,,,,TRUE
+247,247 - Generator CAT 110Kva (2020),Generator CAT 110Kva (2020),Hour,Hours,TRUE,,,,,,,,,TRUE
+248,"248 - Welfare Combi Unit (2020) (12' x 7'6"")","Welfare Combi Unit (2020) (12' x 7'6"")",Day,,,,,,,,,,,TRUE
+249,249 - Van Toyota Auris (171-D-33991),Van Toyota Auris (171-D-33991),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+250,250 - Van Toyota Auris (171-D-43936),Van Toyota Auris (171-D-43936),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+251,251 - Traffic Lights MPB-4400 (Single Battery),Traffic Lights MPB-4400 (Single Battery),Hour,,,,,,,,,,,TRUE
+252,252 - Traffic Lights MPB-4400 (Single Battery),Traffic Lights MPB-4400 (Single Battery),Hour,,,,,,,,,,,TRUE
+253,253 - Traffic Lights MPB-4400 (Single Battery),Traffic Lights MPB-4400 (Single Battery),Hour,,,,,,,,,,,TRUE
+254,254 - Traffic Lights MPB-4400 (Single Battery),Traffic Lights MPB-4400 (Single Battery),Hour,,,,,,,,,,,TRUE
+255,255 - Van Sprinter Dropside CDI 314 (172-KE-2705),Van Sprinter Dropside CDI 314 (172-KE-2705),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+256,256 - Truck Scania G440 Tractor Unit (141-KE-5456),Truck Scania G440 Tractor Unit (141-KE-5456),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+257,257 - Truck Scania P124GB Tipper/Grab (11-KE-8285),Truck Scania P124GB Tipper/Grab (11-KE-8285),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+258,258 - Truck DAF LF55 Tipper/Grab (132-KE-2477),Truck DAF LF55 Tipper/Grab (132-KE-2477),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+259,259 - Storage Curtain Sider (26' x 8'),Storage Curtain Sider (26' x 8'),Day,,,,,,,,,,,TRUE
+260,260 - Paver Vogele Super 800-3i (2017),Paver Vogele Super 800-3i (2017),Hour,Hours,TRUE,,,,,,,,,TRUE
+261,261 - Roller Bomag BW 65H (2021) (0.68 Tonne),Roller Bomag BW 65H (2021) (0.68 Tonne),Hour,Hours,TRUE,,,,,,,,,TRUE
+264,264 - Traffic Control Stop/Go,Traffic Control Stop/Go,Hour,,,,,,,,,,,TRUE
+265,265 - Traffic Control Stop/Go,Traffic Control Stop/Go,Hour,,,,,,,,,,,TRUE
+266,266 - Traffic Control Stop/Go,Traffic Control Stop/Go,Hour,,,,,,,,,,,TRUE
+267,267 - Traffic Control Stop/Go,Traffic Control Stop/Go,Hour,,,,,,,,,,,TRUE
+268,268 - Welfare Combi Unit (2021),Welfare Combi Unit (2021),Day,,,,,,,,,,,TRUE
+269,269 - Cone Crusher Terex Pegson 1000 (2006),Cone Crusher Terex Pegson 1000 (2006),Hour,Hours,TRUE,,,,,,,,,TRUE
+270,270 - Safe-Plate Road Plates (5 + 2),Safe-Plate Road Plates (5 + 2),Day,,,,,,,,,,,TRUE
+271,271 - Forklift JCB (132-KE-2579),Forklift JCB (132-KE-2579),Hour,Hours,TRUE,Forklift,,,TRUE,,,TRUE,,TRUE
+272,272 - Terex Finlay Screener (2010),Terex Finlay Screener (2010),Hour,Hours,TRUE,,,,,,,,,TRUE
+273,273 - Kleemann Jaw Crusher MC110Z (2014),Kleemann Jaw Crusher MC110Z (2014),Hour,Hours,TRUE,,,,,,,,,TRUE
+274,274 - Trench Roller Wacker RTLx-SC3 (2021) (1.45 Tonne),Trench Roller Wacker RTLx-SC3 (2021) (1.45 Tonne),Hour,Hours,TRUE,,,,,,,,,TRUE
+275,275 - Excavator Case CX350D (2019),Excavator Case CX350D (2019),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+276,276 - Artic Dump Truck Volvo A25F (11-KE-8399),Artic Dump Truck Volvo A25F (11-KE-8399),Hour,Hours,TRUE,Artic Site Dumper,,TRUE,,,,,,TRUE
+277,277 - Excavator Kubota KX060-5 (2021),Excavator Kubota KX060-5 (2021),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+278,278 - Excavator Bobcat E27 (2021),Excavator Bobcat E27 (2021),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+279,279 - Van Sprinter CDI 314 (181-D-16681),Van Sprinter CDI 314 (181-D-16681),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+280,"280 - Pressure Test Pump / 2,000l Bowser (2021)","Pressure Test Pump / 2,000l Bowser (2021)",Hour,,,,,,,,,,,TRUE
+281,281 - Hyundai Santa Fe (10-DL-1873),Hyundai Santa Fe (10-DL-1873),Hour,,,,,,,,,,,TRUE
+282,282 - Dumper Thwaites 9 Tonne (132-KE-2555),Dumper Thwaites 9 Tonne (132-KE-2555),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+284,284 - Kubota Utility Vehicle RTV-1140 (2014),Kubota Utility Vehicle RTV-1140 (2014),Hour,Hours,TRUE,,,,,,,,,TRUE
+285,285 - Excavator Case CX85D (2022),Excavator Case CX85D (2022),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+286,286 - Van Sprinter Dropside CDI 314 (172-KE-3010),Van Sprinter Dropside CDI 314 (172-KE-3010),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+287,287 - Van Sprinter Dropside CDI 314 (172-KE-2999),Van Sprinter Dropside CDI 314 (172-KE-2999),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+288,288 - Cement Mixer (Towed) (2022) (175 Litre),Cement Mixer (Towed) (2022) (175 Litre),Hour,,,,,,,,,,,TRUE
+290,290 - Truck DAF LF45 Tipper (161-KE-7539),Truck DAF LF45 Tipper (161-KE-7539),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+291,291 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+292,292 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+293,293 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+294,294 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+295,295 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+296,296 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+297,297 - Truck DAF LF220 Tipper (152-KY-850),Truck DAF LF220 Tipper (152-KY-850),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+298,298 - Van Sprinter Dropside CDI 314 (172-KE-3047),Van Sprinter Dropside CDI 314 (172-KE-3047),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+299,299 - Hyundai Tucson (221-KE-3682),Hyundai Tucson (221-KE-3682),Hour,,,,,,,,,,,TRUE
+300,300 - Excavator Kubota KX030-4 (2022),Excavator Kubota KX030-4 (2022),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+301,301 - Van Sprinter Dropside CDI 314 (172-KE-3061),Van Sprinter Dropside CDI 314 (172-KE-3061),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+302,302 - Van Sprinter CDI 314 (172-D-23059),Van Sprinter CDI 314 (172-D-23059),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+303,303 - Van Sprinter CDI 314 (181-D-3555),Van Sprinter CDI 314 (181-D-3555),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+304,304 - Van Sprinter CDI 314 (181-D-16907),Van Sprinter CDI 314 (181-D-16907),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+305,305 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+306,306 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+307,307 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+308,308 - Traffic Lights Diabolux (Plastic) (2022),Traffic Lights Diabolux (Plastic) (2022),Hour,,,,,,,,,,,TRUE
+309,309 - Van Sprinter Dropside CDI 314 (172-KE-3062),Van Sprinter Dropside CDI 314 (172-KE-3062),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+310,310 - Anti-Vandal Office Unit (12' x 10'),Anti-Vandal Office Unit (12' x 10'),Day,,,,,,,,,,,TRUE
+311,311 - Traffic Control Stop/Go,Traffic Control Stop/Go,Hour,,,,,,,,,,,TRUE
+312,312 - Traffic Control Stop/Go,Traffic Control Stop/Go,Hour,,,,,,,,,,,TRUE
+313,313 - Traffic Control Stop/Go,Traffic Control Stop/Go,Hour,,,,,,,,,,,TRUE
+314,314 - Traffic Control Stop/Go,Traffic Control Stop/Go,Hour,,,,,,,,,,,TRUE
+315,315 - Terex Scalping Screener Colt 1600 (2021),Terex Scalping Screener Colt 1600 (2021),Hour,,,,,,,,,,,TRUE
+316,316 - Excavator Kubota KX030-4 (2022),Excavator Kubota KX030-4 (2022),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+317,317 - Drag Box 6.0m x 3.0m,Drag Box 6.0m x 3.0m,Hour,,,,,,,,,,,TRUE
+318,318 - Manhole Box 3.0m (L) x 2.0m (H),Manhole Box 3.0m (L) x 2.0m (H),Hour,,,,,,,,,,,TRUE
+319,319 - Van Sprinter Dropside CDI 314 (181-KE-5932),Van Sprinter Dropside CDI 314 (181-KE-5932),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+320,320 - Trench Roller Wacker RTSC (2018) (1.45 Tonne),Trench Roller Wacker RTSC (2018) (1.45 Tonne),Hour,Hours,TRUE,,,,,,,,,TRUE
+321,321 - Welfare Combi Unit (2021),Welfare Combi Unit (2021),Day,,,,,,,,,,,TRUE
+322,322 - Anti-Vandal Canteen Unit (20' x 10'),Anti-Vandal Canteen Unit (20' x 10'),Day,,,,,,,,,,,TRUE
+323,323 - Anti-Vandal Office Unit (10' x 8'),Anti-Vandal Office Unit (10' x 8'),Day,,,,,,,,,,,TRUE
+324,324 - Anti-Vandal Office Unit (20' x 10'),Anti-Vandal Office Unit (20' x 10'),Day,,,,,,,,,,,TRUE
+325,325 - Office Unit (20' x 10'),Office Unit (20' x 10'),Day,,,,,,,,,,,TRUE
+326,326 - Office Unit (24' x 10'),Office Unit (24' x 10'),Day,,,,,,,,,,,TRUE
+327,327 - Excavator Kubota KX030-4 (2022),Excavator Kubota KX030-4 (2022),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+328,328 - Forklift Mitsubishi (2012),Forklift Mitsubishi (2012),Hour,Hours,TRUE,,,,TRUE,,,TRUE,,TRUE
+329,329 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+330,330 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+331,331 - Drive Through Wheel Wash (Portable),Drive Through Wheel Wash (Portable),Day,,,,,,,,,,,TRUE
+332,332 - Drive Through Wheel Wash (Portable),Drive Through Wheel Wash (Portable),Day,,,,,,,,,,,TRUE
+333,333 - Sheet Pile (Various Length),Sheet Pile (Various Length),Day,,,,,,,,,,,TRUE
+334,334 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+335,335 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+336,336 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+337,337 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+338,338 - Kia Sportage (222-KE-2099),Kia Sportage (222-KE-2099),Hour,,,,,,,,,,,TRUE
+339,339 - Loading Shovel Volvo L60G (141-KE-5673),Loading Shovel Volvo L60G (141-KE-5673),Hour,Hours,TRUE,,,TRUE,,,,,,TRUE
+340,340 - Ford Ranger (192-L-1344),Ford Ranger (192-L-1344),Hour,,TRUE,,,,,,,,,TRUE
+341,341 - Picker Conveyor (Powerscreen 1200),Picker Conveyor (Powerscreen 1200),Hour,,,,,,,,,,,TRUE
+342,342 - Ford Ranger (191-CW-954),Ford Ranger (191-CW-954),Hour,,TRUE,,,,,,,,,TRUE
+343,343 - Truck DAF LF220 Tipper/Grab (151-KE-6814),Truck DAF LF220 Tipper/Grab (151-KE-6814),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+344,344 - Excavator Case CX145 DSR (2022),Excavator Case CX145 DSR (2022),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+345,345 - Van Sprinter CDI 314 (181-KE-5989),Van Sprinter CDI 314 (181-KE-5989),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+346,346 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+347,"347 - Sludge Pump 6"" (2022)","Sludge Pump 6"" (2022)",Hour,Hours,TRUE,,,,,,,,,TRUE
+348,"348 - Sludge Pump 6"" (2022)","Sludge Pump 6"" (2022)",Hour,Hours,TRUE,,,,,,,,,TRUE
+349,349 - Excavator Kubota KX030-4 (2022),Excavator Kubota KX030-4 (2022),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+350,350 - Teleporter JCB 536-70 (131-KE-4758),Teleporter JCB 536-70 (131-KE-4758),Hour,Hours,TRUE,Telescopic Handler,,TRUE,,,,,,TRUE
+351,351 - Excavator Case CX245D c/w GPS (2022),Excavator Case CX245D c/w GPS (2022),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+352,"352 - Sludge Pump 6""","Sludge Pump 6""",Hour,Hours,TRUE,,,,,,,,,TRUE
+353,"353 - Sludge Pump 6""","Sludge Pump 6""",Hour,Hours,TRUE,,,,,,,,,TRUE
+354,"354 - Sludge Pump 6"" (2006)","Sludge Pump 6"" (2006)",Hour,Hours,TRUE,,,,,,,,,TRUE
+355,"355 - Sludge Pump 4"" (2009)","Sludge Pump 4"" (2009)",Hour,Hours,TRUE,,,,,,,,,TRUE
+356,356 - Van Citroen Berlingo (171-CW-1804),Van Citroen Berlingo (171-CW-1804),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+357,357 - Van Sprinter Dropside CDI 314 (191-KE-4782),Van Sprinter Dropside CDI 314 (191-KE-4782),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+358,358 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+359,359 - Truck Scania P410 Tipper/Grab (191-KE-4791),Truck Scania P410 Tipper/Grab (191-KE-4791),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+360,360 - Truck DAF LF45 180 (142-KE-3137),Truck DAF LF45 180 (142-KE-3137),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+361,361 - Mobile Stair Tower - 1.5m x 3.0m x 8.0m,Mobile Stair Tower - 1.5m x 3.0m x 8.0m,Hour,,,,,,,,,,,TRUE
+362,362 - Storage Container (8' x 7'),Storage Container (8' x 7'),Day,,,,,,,,,,,TRUE
+363,363 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+364,364 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+365,365 - Drag Box 7.5m x 2.0m,Drag Box 7.5m x 2.0m,Hour,,,,,,,,,,,TRUE
+366,366 - Toyota Hilux (171-WW-2795),Toyota Hilux (171-WW-2795),Hour,,TRUE,,,,,,,,,TRUE
+367,367 - Excavator Kubota KX060-5 (2023),Excavator Kubota KX060-5 (2023),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+368,368 - Excavator Case CX245D (2023),Excavator Case CX245D (2023),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+369,369 - Traffic Lights Diabolux (Plastic) (2023),Traffic Lights Diabolux (Plastic) (2023),Hour,,,,,,,,,,,TRUE
+370,370 - Traffic Lights Diabolux (Plastic) (2023),Traffic Lights Diabolux (Plastic) (2023),Hour,,,,,,,,,,,TRUE
+371,371 - Traffic Lights Diabolux (Plastic) (2023),Traffic Lights Diabolux (Plastic) (2023),Hour,,,,,,,,,,,TRUE
+372,372 - Traffic Lights Diabolux (Plastic) (2023),Traffic Lights Diabolux (Plastic) (2023),Hour,,,,,,,,,,,TRUE
+373,373 - Trench Box & Riser Assembly 5.1m x 3.8m,Trench Box & Riser Assembly 5.1m x 3.8m,Hour,,,,,,,,,,,TRUE
+374,374 - Trench Roller Wacker RTLx-SC3 (2023),Trench Roller Wacker RTLx-SC3 (2023),Hour,Hours,TRUE,,,,,,,,,TRUE
+375,375 - Anti-Vandal Office Unit (20' x 10'),Anti-Vandal Office Unit (20' x 10'),Day,,,,,,,,,,,TRUE
+376,376 - Van Sprinter Dropside CDI 314 (182-KE-2723),Van Sprinter Dropside CDI 314 (182-KE-2723),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+377,377 - Van Sprinter Dropside CDI 314 (182-KE-2740),Van Sprinter Dropside CDI 314 (182-KE-2740),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+378,378 - Van Sprinter CDI 314 (191-KE-4880),Van Sprinter CDI 314 (191-KE-4880),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+379,379 - VMS Sign (2.4m x 1.2m),VMS Sign (2.4m x 1.2m),Day,,,,,,,,,,,TRUE
+380,380 - VMS Sign (2.4m x 1.2m),VMS Sign (2.4m x 1.2m),Day,,,,,,,,,,,TRUE
+381,381 - Generator CAT 50kVA (2023),Generator CAT 50kVA (2023),Hour,,,,,,,,,,,TRUE
+382,382 - Truck Renault C440 c/w Volumetric Mixer (232-KE-2461),Truck Renault C440 c/w Volumetric Mixer (232-KE-2461),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+383,383 - Van Caddy (191-D-13058),Van Caddy (191-D-13058),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+384,384 - Truck Scania R500 XT Tractor Unit (211-D-37563),Truck Scania R500 XT Tractor Unit (211-D-37563),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+385,385 - Van Sprinter CDI 316 (192-KE-2270),Van Sprinter CDI 316 (192-KE-2270),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+386,386 - Office Unit (24' x 10'),Office Unit (24' x 10'),Day,,,,,,,,,,,TRUE
+387,387 - VMS Sign (2.4m x 1.2m),VMS Sign (2.4m x 1.2m),Day,,,,,,,,,,,TRUE
+388,388 - VMS Sign (2.4m x 1.2m),VMS Sign (2.4m x 1.2m),Day,,,,,,,,,,,TRUE
+389,389 - Lighting Tower SMC TL-90 (2016),Lighting Tower SMC TL-90 (2016),Day,Hours,TRUE,,,,,,,,,TRUE
+390,390 - Lighting Tower Generac VT1 (2016),Lighting Tower Generac VT1 (2016),Day,Hours,TRUE,,,,,,,,,TRUE
+391,391 - Van Sprinter Dropside CDI 316 (201-KE-3731),Van Sprinter Dropside CDI 316 (201-KE-3731),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+392,392 - Truck Scania P280 Flatbed/Crane (10-KE-19093),Truck Scania P280 Flatbed/Crane (10-KE-19093),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+393,393 - Van Sprinter Dropside CDI 316 (192-KE-2284),Van Sprinter Dropside CDI 316 (192-KE-2284),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+394,394 - Traffic Lights Diabolux (Plastic) (2023),Traffic Lights Diabolux (Plastic) (2023),Hour,,,,,,,,,,,TRUE
+395,395 - Traffic Lights Diabolux (Plastic) (2023),Traffic Lights Diabolux (Plastic) (2023),Hour,,,,,,,,,,,TRUE
+396,396 - Teleporter JCB 540-180 (241-KE-334),Teleporter JCB 540-180 (241-KE-334),Hour,Hours,TRUE,Telescopic Handler,,TRUE,,,,,,TRUE
+397,397 - Roller Bomag BW 90AD-5 (2023) (1.50 Tonne),Roller Bomag BW 90AD-5 (2023) (1.50 Tonne),Hour,Hours,TRUE,,,,,,,,,TRUE
+398,398 - Powerscreen MK2 Rinser,Powerscreen MK2 Rinser,Hour,,,,,,,,,,,TRUE
+399,399 - Office Unit (40' x 14'),Office Unit (40' x 14'),Day,,,,,,,,,,,TRUE
+400,400 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+401,401 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+402,402 - Van Toyota Auris (192-D-14661),Van Toyota Auris (192-D-14661),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+403,403 - Van Toyota Auris (192-D-14679),Van Toyota Auris (192-D-14679),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+404,404 - Van Toyota Auris (191-D-14347),Van Toyota Auris (191-D-14347),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+405,405 - Van Sprinter CDI 316 (192-KE-2292),Van Sprinter CDI 316 (192-KE-2292),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+406,406 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+407,407 - Anti-Vandal Welfare Unit (22' x 8'),Anti-Vandal Welfare Unit (22' x 8'),Day,,,,,,,,,,,TRUE
+408,408 - Anti-Vandal Welfare Unit (22' x 8'),Anti-Vandal Welfare Unit (22' x 8'),Day,,,,,,,,,,,TRUE
+409,409 - Teleporter JCB 542-70 (211-KE-4035),Teleporter JCB 542-70 (211-KE-4035),Hour,Hours,TRUE,Telescopic Handler,,TRUE,,,,,,TRUE
+410,410 - Lighting Tower Generac VT1 (2016),Lighting Tower Generac VT1 (2016),Day,Hours,TRUE,,,,,,,,,TRUE
+411,411 - Truck Scania R450 XT Tractor Unit (182-KE-2776),Truck Scania R450 XT Tractor Unit (182-KE-2776),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+412,412 - Van Caddy (201-D-9638),Van Caddy (201-D-9638),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+413,413 - Dumper Thwaites 9 Tonne (141-KE-5830),Dumper Thwaites 9 Tonne (141-KE-5830),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+415,415 - Anti-Vandal Office Unit (24' x 10'),Anti-Vandal Office Unit (24' x 10'),Day,,,,,,,,,,,TRUE
+416,416 - Excavator Case CX145D (2021),Excavator Case CX145D (2021),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+417,417 - Truck DAF LF180 Tipper (161-KE-7826),Truck DAF LF180 Tipper (161-KE-7826),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+418,418 - Teleporter JCB 542-70 (201-KE-3756),Teleporter JCB 542-70 (201-KE-3756),Hour,Hours,TRUE,Telescopic Handler,,TRUE,,,,,,TRUE
+419,419 - Planer Wirtgen W100CFI (2015),Planer Wirtgen W100CFI (2015),Hour,Hours,TRUE,,,,TRUE,,,,,TRUE
+420,420 - Van Sprinter CDI 316 (201-KE-3771),Van Sprinter CDI 316 (201-KE-3771),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+421,421 - Van Sprinter Dropside CDI 314 (191-KE-4969),Van Sprinter Dropside CDI 314 (191-KE-4969),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+422,422 - Excavator Kubota KX060-5 (2024),Excavator Kubota KX060-5 (2024),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+423,423 - Excavator Kubota KX060-5 (2024),Excavator Kubota KX060-5 (2024),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+424,424 - Dumper Thwaites 9 Tonne (212-KE-2523),Dumper Thwaites 9 Tonne (212-KE-2523),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+425,425 - Dumper Thwaites 9 Tonne (212-KE-2522),Dumper Thwaites 9 Tonne (212-KE-2522),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+426,426 - Anti-Vandal Office Unit (40' x 10'),Anti-Vandal Office Unit (40' x 10'),Day,,,,,,,,,,,TRUE
+427,427 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+428,428 - Truck Scania P280 Tipper/Grab (142-KE-3279),Truck Scania P280 Tipper/Grab (142-KE-3279),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+429,429 - Truck Scania P280 Tipper/Grab (151-KE-6985),Truck Scania P280 Tipper/Grab (151-KE-6985),Hour,,TRUE,Driver CPC,Hydraulic Lorry Loader,TRUE,,,,,,TRUE
+430,430 - Traffic Lights Millenium V2 (2024),Traffic Lights Millenium V2 (2024),Hour,,,,,,,,,,,TRUE
+431,431 - Traffic Lights Millenium V2 (2024),Traffic Lights Millenium V2 (2024),Hour,,,,,,,,,,,TRUE
+432,432 - Traffic Lights Millenium V2 (2024),Traffic Lights Millenium V2 (2024),Hour,,,,,,,,,,,TRUE
+433,433 - Traffic Lights Millenium V2 (2024),Traffic Lights Millenium V2 (2024),Hour,,,,,,,,,,,TRUE
+434,434 - Van Caddy (191-D-10473),Van Caddy (191-D-10473),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+435,435 - Teleporter JCB 542-70 (192-KE-2338),Teleporter JCB 542-70 (192-KE-2338),Hour,Hours,TRUE,Telescopic Handler,,TRUE,,,,,,TRUE
+436,436 - Van Caddy (211-G-3342),Van Caddy (211-G-3342),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+437,437 - Van Toyota Auris (191-D-14346),Van Toyota Auris (191-D-14346),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+438,"438 - Bunded Diesel Tank 2,250 Litre (2024)","Bunded Diesel Tank 2,250 Litre (2024)",Hour,,,,,,,,,,,TRUE
+439,439 - Anti-Vandal Office Unit (32' x 9'),Anti-Vandal Office Unit (32' x 9'),Day,,,,,,,,,,,TRUE
+440,440 - Audi A3 (131-CW-1277),Audi A3 (131-CW-1277),Hour,,,,,,,,,,,TRUE
+441,441 - Geobrace 550 Frames (16 No.),Geobrace 550 Frames (16 No.),Day,,,,,,,,,,,TRUE
+442,442 - Anti Vandal Toilet Unit (20' x 10'),Anti Vandal Toilet Unit (20' x 10'),Day,,,,,,,,,,,TRUE
+443,443 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+444,444 - Excavator Case CX245D (2024),Excavator Case CX245D (2024),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+445,445 - Van Caddy (191-D-4180),Van Caddy (191-D-4180),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+446,446 - Van Caddy (201-D-27237),Van Caddy (201-D-27237),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+447,447 - Truck Scania P410 Tipper (212-KE-2550),Truck Scania P410 Tipper (212-KE-2550),Hour,,TRUE,Driver CPC,,TRUE,,,,,,TRUE
+448,448 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+449,449 - Van Caddy (191-D-30701),Van Caddy (191-D-30701),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+450,450 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+451,451 - Generator AJ Power 33kVA (2024),Generator AJ Power 33kVA (2024),Hour,Hours,TRUE,,,,,,,,,TRUE
+452,452 - Van Caddy (202-D-6483),Van Caddy (202-D-6483),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+453,453 - Van Sprinter CDI 316 (202-KE-2407),Van Sprinter CDI 316 (202-KE-2407),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+454,454 - Storage Container (10' x 8') (Power),Storage Container (10' x 8') (Power),Day,,,,,,,,,,,TRUE
+455,455 - Dumper Thwaites 9 Tonne (211-KE-4339),Dumper Thwaites 9 Tonne (211-KE-4339),Hour,Hours,TRUE,Site Dumper,,TRUE,,,,,,TRUE
+456,456 - Office Unit (24' x 10'),Office Unit (24' x 10'),Day,,,,,,,,,,,TRUE
+457,457 - Dozer Komatsu D65PX-17 (2016),Dozer Komatsu D65PX-17 (2016),Hour,Hours,TRUE,,,,,,,,,TRUE
+458,458 - Cabin Canteen 20' x 10',Cabin Canteen 20' x 10',Day,,,,,,,,,,,TRUE
+459,459 - CDE Wash Plant,CDE Wash Plant,Hour,,,,,,,,,,,TRUE
+460,460 - Van Caddy (201-D-27235),Van Caddy (201-D-27235),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+461,461 - Cement Silo - Vertical Static - 50 Tonne,Cement Silo - Vertical Static - 50 Tonne,Day,,,,,,,,,,,TRUE
+462,462 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+463,463 - Van Sprinter CDI 316 (192-KE-2416),Van Sprinter CDI 316 (192-KE-2416),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+464,464 - Weighbridge,Weighbridge,Day,,,,,,,,,,,TRUE
+465,465 - Anti-Vandal Office Unit 24'x10',Anti-Vandal Office Unit 24'x10',Day,,,,,,,,,,,TRUE
+466,466 - Anti-Vandal Office Unit 24'x10',Anti-Vandal Office Unit 24'x10',Day,,,,,,,,,,,TRUE
+467,467 - Anti-Vandal Canteen / Drying Room 24' x 10',Anti-Vandal Canteen / Drying Room 24' x 10',Day,,,,,,,,,,,TRUE
+468,468 - Anti-Vandal Canteen / Drying Room 24' x 10',Anti-Vandal Canteen / Drying Room 24' x 10',Day,,,,,,,,,,,TRUE
+469,469 - Generator CAT 33kVA (2024),Generator CAT 33kVA (2024),Hour,Hours,TRUE,,,,,,,,,TRUE
+470,470 - Generator AJ Power 33kVA (2024),Generator AJ Power 33kVA (2024),Hour,Hours,TRUE,,,,,,,,,TRUE
+471,471 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+472,472 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+473,473 - Storage Container (10' x 8') (Power),Storage Container (10' x 8') (Power),Day,,,,,,,,,,,TRUE
+474,474 - Trench Roller Wacker RTLx-SC3 (2024),Trench Roller Wacker RTLx-SC3 (2024),Hour,Hours,TRUE,,,,,,,,,TRUE
+475,475 - Storage Container (10' x 8') (Power),Storage Container (10' x 8') (Power),Day,,,,,,,,,,,TRUE
+476,476 - Storage Container (10' x 8') (Power),Storage Container (10' x 8') (Power),Day,,,,,,,,,,,TRUE
+477,477 - Anti-Vandal Office Unit 30'x10',Anti-Vandal Office Unit 30'x10',Day,,,,,,,,,,,TRUE
+478,478 - Lighting Tower Trime X-ECOK2 (2016),Lighting Tower Trime X-ECOK2 (2016),Day,,,,,,,,,,,TRUE
+479,"479 - Soiled Water Pump 4"" Submersible XJS80 (2025)","Soiled Water Pump 4"" Submersible XJS80 (2025)",Hour,,,,,,,,,,,TRUE
+480,480 - Generator AJ Power 33kVA (2024),Generator AJ Power 33kVA (2024),Hour,Hours,TRUE,,,,,,,,,TRUE
+481,481 - Mobile Security Tower (Main),Mobile Security Tower (Main),Day,,,,,,,,,,,TRUE
+482,482 - Mobile Security Tower (Auxiliary),Mobile Security Tower (Auxiliary),Day,,,,,,,,,,,TRUE
+483,483 - Storage Container (20' x 8'),Storage Container (20' x 8'),Day,,,,,,,,,,,TRUE
+484,484 - Anti-Vandal Toilet Unit (Single),Anti-Vandal Toilet Unit (Single),Day,,,,,,,,,,,TRUE
+485,485 - Van Caddy (221-MH-475),Van Caddy (221-MH-475),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+486,486 - Excavator KX060-5 (2025),Excavator KX060-5 (2025),Hour,Hours,TRUE,Excavator 360,,,TRUE,,,,,TRUE
+487,487 - Van Caddy (231-D-6175),Van Caddy (231-D-6175),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+488,488 - Van Caddy (231-D-6179),Van Caddy (231-D-6179),Hour,,TRUE,,,TRUE,,,,,TRUE,TRUE
+489,489 - Storage Container (Workshop) (20' x 8'),Storage Container (Workshop) (20' x 8'),Day,,,,,,,,,,,TRUE
+490,490 - Storage Container (Lab) (20' x 8'),Storage Container (Lab) (20' x 8'),Day,,,,,,,,,,,TRUE
+491,491 - Anti-Vandal Canteen Unit (24' x 10'),Anti-Vandal Canteen Unit (24' x 10'),Day,,,,,,,,,,,TRUE
+492,492 - Generator AJ Power 550kVA (2025),Generator AJ Power 550kVA (2025),Hour,,,,,,,,,,,TRUE
+493,493 - Traffic Lights Millenium V2 (2024),Traffic Lights Millenium V2 (2024),Hour,,,,,,,,,,,TRUE
+494,494 - Traffic Lights Millenium V2 (2024),Traffic Lights Millenium V2 (2024),Hour,,,,,,,,,,,TRUE
+495,"495 - Soiled Water Pump 4"" Submersible XJ80ND (2025)","Soiled Water Pump 4"" Submersible XJ80ND (2025)",Hour,,,,,,,,,,,TRUE
+496,496 - Lighting Tower Trime X-Solar (2007),Lighting Tower Trime X-Solar (2007),Day,,,,,,,,,,,TRUE
+497,497 - Lighting Tower Verdegro LL TT-H (2016),Lighting Tower Verdegro LL TT-H (2016),Day,,,,,,,,,,,TRUE
+498,498 - Anti-Vandal Canteen / Drying Room 24' x 10',Anti-Vandal Canteen / Drying Room 24' x 10',Day,,,,,,,,,,,TRUE
+499,499 - Storage Container (40' x 8'),Storage Container (40' x 8'),Day,,,,,,,,,,,TRUE
+500,500 - Loading Shovel Volvo L180H (191-KE-XXXX),Loading Shovel Volvo L180H (191-KE-XXXX),Hour,,,,,TRUE,,,,,,TRUE
+A3,A3 - Dumper Trailer Herron 24 Tonne,Dumper Trailer Herron 24 Tonne,Hour,,,,,,,TRUE,,,,TRUE
+A4,A4 - Dumper Trailer Herron 18 Tonne,Dumper Trailer Herron 18 Tonne,Hour,,,,,,,TRUE,,,,TRUE
+A7,A7 - Stoning Cart JPM 14 Tonne,Stoning Cart JPM 14 Tonne,Hour,,,,,,,,,,,TRUE
+A10,"A10 - Plant Trailer Ifor Williams 2,700Kg","Plant Trailer Ifor Williams 2,700Kg",Hour,,,,,,,TRUE,,,,TRUE
+A11,A11 - Diesel Bowser JPM Double Axle,Diesel Bowser JPM Double Axle,Hour,,,,,,,,,,,TRUE
+A13,A13 - Diesel Bowser Single Axle,Diesel Bowser Single Axle,Hour,,,,,,,,,,,TRUE
+A17,A17 - Stoning Cart Herron 24 Tonne,Stoning Cart Herron 24 Tonne,Hour,,,,,,,,,,,TRUE
+A18,A18 - Dumper Trailer Herron 24 Tonne,Dumper Trailer Herron 24 Tonne,Hour,,,,,,,TRUE,,,,TRUE
+A19,"A19 - Dropside Trailer Ifor Williams 3,500Kg","Dropside Trailer Ifor Williams 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A21,A21 - Mole Grundomat 75mm,Mole Grundomat 75mm,Hour,,,,,,,,,,,TRUE
+A22,A22 - Rock Breaker Montaburt 125 7 Tonne,Rock Breaker Montaburt 125 7 Tonne,Hour,,,,,,,,,,,TRUE
+A23,A23 - Rock Breaker Montaburt 300 18 Tonne,Rock Breaker Montaburt 300 18 Tonne,Hour,,,,,,,,,,,TRUE
+A24,A24 - Storage Container (20' x 8'),Storage Container (20' x 8'),Hour,,,,,,,,,,,TRUE
+A25,"A25 - Diesel Bowser Cashels Double Axle 1,000L","Diesel Bowser Cashels Double Axle 1,000L",Hour,,,,,,,,,,,TRUE
+A26,"A26 - Coil Trailer c/w Tamer Double Axel 3,500Kg","Coil Trailer c/w Tamer Double Axel 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A28,A28 - Road Sweeper,Road Sweeper,Hour,,,,,,,,,,,TRUE
+A29,A29 - Low Loader Trailer Herron,Low Loader Trailer Herron,Hour,,,,,,,TRUE,,,,TRUE
+A31,A31 - Rock Breaker Atlas Copco SB152 4 Tonne,Rock Breaker Atlas Copco SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A32,"A32 - Dropside Trailer Tipper Ifor Williams 3,500Kg","Dropside Trailer Tipper Ifor Williams 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A34,"A34 - Water Settlement Tank 9,000 Litres","Water Settlement Tank 9,000 Litres",Hour,,,,,,,,,,,TRUE
+A35,A35 - Rock Breaker Krupps HM135 5 Tonne,Rock Breaker Krupps HM135 5 Tonne,Hour,,,,,,,,,,,TRUE
+A36,"A36 - Dropside Trailer Ifor Williams 3,500Kg","Dropside Trailer Ifor Williams 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A37,A37 - Rock Breaker Atlas Copco SB302 7 Tonne,Rock Breaker Atlas Copco SB302 7 Tonne,Hour,,,,,,,,,,,TRUE
+A40,A40 - Rock Breaker Rammer E68 25 Tonne,Rock Breaker Rammer E68 25 Tonne,Hour,,,,,,,,,,,TRUE
+A42,A42 - Low Loader Trailer Dooley,Low Loader Trailer Dooley,Hour,,,,,,,TRUE,,,,TRUE
+A43,"A43 - Dropside Trailer Ifor Williams 3,500Kg","Dropside Trailer Ifor Williams 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A44,A44 - Rock Breaker Rammer CB655 8 Tonne,Rock Breaker Rammer CB655 8 Tonne,Hour,,,,,,,,,,,TRUE
+A45,A45 - Rock Breaker 5TL 20 Tonne,Rock Breaker 5TL 20 Tonne,Hour,,,,,,,,,,,TRUE
+A47,"A47 - Plant Trailer Ifor Williams 2,700Kg","Plant Trailer Ifor Williams 2,700Kg",Hour,,,,,,,TRUE,,,,TRUE
+A48,A48 - Mole Grundomat 45mm,Mole Grundomat 45mm,Hour,,,,,,,,,,,TRUE
+A49,"A49 - Low Loader Trailer McCauley (2010) 7,500Kg","Low Loader Trailer McCauley (2010) 7,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A50,A50 - Rock Breaker 180L 4 Tonne,Rock Breaker 180L 4 Tonne,Hour,,,,,,,,,,,TRUE
+A51,"A51 - Dropside Trailer Ifor Williams 3,500Kg","Dropside Trailer Ifor Williams 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A52,"A52 - Plant Trailer Ifor Williams 3,500Kg","Plant Trailer Ifor Williams 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A53,A53 - Excavator Wheel,Excavator Wheel,Hour,,,,,,,,,,,TRUE
+A54,"A54 - Pipe Lifter 1,500Kg","Pipe Lifter 1,500Kg",Hour,,,,,,,,,,,TRUE
+A56,A56 - Rock Breaker Atlas Copco SB152 4 Tonne,Rock Breaker Atlas Copco SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A57,A57 - Rock Breaker Atlas Copco SB152 4 Tonne,Rock Breaker Atlas Copco SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A58,A58 - Rock Breaker Atlas Copco SB152 4 Tonne,Rock Breaker Atlas Copco SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A59,A59 - Rock Breaker Atlas Copco SB152 4 Tonne,Rock Breaker Atlas Copco SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A60,"A60 - Diesel Bowser Cashels Double Axle (2016) 1,816L","Diesel Bowser Cashels Double Axle (2016) 1,816L",Hour,,,,,,,,,,,TRUE
+A62,A62 - SEB Cable Reel Trailer CD130 (2016),SEB Cable Reel Trailer CD130 (2016),Hour,,,,,,,TRUE,,,,TRUE
+A63,A63 - SEB Cable Reel Trailer CD32 (2016),SEB Cable Reel Trailer CD32 (2016),Hour,,,,,,,TRUE,,,,TRUE
+A65,A65 - Extendable Skeletal Trailer (2006),Extendable Skeletal Trailer (2006),Hour,,,,,,,TRUE,,,,TRUE
+A66,A66 - Rock Grabber Poclain 160CKB 4 Tonne,Rock Grabber Poclain 160CKB 4 Tonne,Hour,,,,,,,,,,,TRUE
+A67,A67 - Rock Breaker Atlas Copco SB152 4 Tonne,Rock Breaker Atlas Copco SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A68,A68 - Compactor Hill 25 Tonne,Compactor Hill 25 Tonne,Hour,,,,,,,,,,,TRUE
+A69,A69 - SFL Cable Reel Trailer 8 Tonne (1998),SFL Cable Reel Trailer 8 Tonne (1998),Hour,,,,,,,TRUE,,,,TRUE
+A70,A70 - Rock Breaker Epiroc SB202 6 Tonne,Rock Breaker Epiroc SB202 6 Tonne,Hour,,,,,,,,,,,TRUE
+A71,"A71 - Plant Trailer Ifor Williams 3,500Kg","Plant Trailer Ifor Williams 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A72,A72 - Double Block Grab,Double Block Grab,Hour,,,,,,,,,,,TRUE
+A73,A73 - Rock Breaker Epiroc SB202 6 Tonne,Rock Breaker Epiroc SB202 6 Tonne,Hour,,,,,,,,,,,TRUE
+A74,A74 - Low Loader Trailer Dooley (2020),Low Loader Trailer Dooley (2020),Hour,,,,,,,TRUE,,,,TRUE
+A75,A75 - Rock Breaker Epiroc SB202 6 Tonne,Rock Breaker Epiroc SB202 6 Tonne,Hour,,,,,,,,,,,TRUE
+A76,A76 - Trailer Curtain Sider (40' x 8'),Trailer Curtain Sider (40' x 8'),Hour,,,,,,,TRUE,,,,TRUE
+A77,A77 - Rock Breaker Epiroc SB102 3 Tonne,Rock Breaker Epiroc SB102 3 Tonne,Hour,,,,,,,,,,,TRUE
+A79,A79 - Rock Breaker Epiroc SB152 4 Tonne,Rock Breaker Epiroc SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A80,A80 - Grundowinch KW4000 (2021),Grundowinch KW4000 (2021),Hour,,,,,,,,,TRUE,,TRUE
+A81,"A81 - Water Bowser c/w Power Washer 1,000 Litre","Water Bowser c/w Power Washer 1,000 Litre",Hour,,,,,,,,,,,TRUE
+A82,"A82 - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A83,A83 - Low Loader Trailer Noteboom (2014),Low Loader Trailer Noteboom (2014),Hour,,,,,,,TRUE,,,,TRUE
+A84,A84 - Tipping Trailer Schmitz (2016),Tipping Trailer Schmitz (2016),Hour,,,,,,,TRUE,,,,TRUE
+A85,"A85 - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A86,"A86 - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A87,A87 - Rock Breaker Epiroc SB152 4 Tonne,Rock Breaker Epiroc SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A88,A88 - Rock Breaker Epiroc SB202 6 Tonne,Rock Breaker Epiroc SB202 6 Tonne,Hour,,,,,,,,,,,TRUE
+A89,A89 - Trailer Curtain Sider (45' x 8'),Trailer Curtain Sider (45' x 8'),Hour,,,,,,,TRUE,,,,TRUE
+A90,"A90 - Bunded Diesel Tank 3,500 Litre (2021)","Bunded Diesel Tank 3,500 Litre (2021)",Hour,,,,,,,,,,,TRUE
+A91,A91 - Forklift Jib Extension,Forklift Jib Extension,Hour,,,,,,TRUE,,,,,TRUE
+A92,A92 - Rock Breaker Epiroc SB302 8 Tonne,Rock Breaker Epiroc SB302 8 Tonne,Hour,,,,,,,,,,,TRUE
+A93,A93 - Ripper Tooth to suit Case CX350,Ripper Tooth to suit Case CX350,Hour,,,,,,,,,,,TRUE
+A94,"A94 - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A95,"A95 - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A96,A96 - Rock Breaker Epiroc SB152 4 Tonne,Rock Breaker Epiroc SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A97,A97 - Rock Breaker Epiroc SB152 4 Tonne,Rock Breaker Epiroc SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A98,A98 - Pile Driver Movax SG-60 (2015) (2.46 Tonne),Pile Driver Movax SG-60 (2015) (2.46 Tonne),Hour,,,,,,,,,,,TRUE
+A99,A99 - Rock Breaker Epiroc SB152 4 Tonne,Rock Breaker Epiroc SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A100,"A100  - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A101,A101 - Settlement Tank Siltbuster Hb20,Settlement Tank Siltbuster Hb20,Hour,,,,,,,,,,,TRUE
+A102,"A102  - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A103,A103 - Rock Breaker Epiroc SB152 4 Tonne,Rock Breaker Epiroc SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A104,A104 - Settlement Tank,Settlement Tank,Hour,,,,,,,,,,,TRUE
+A105,A105 - Settlement Tank,Settlement Tank,Hour,,,,,,,,,,,TRUE
+A106,A106 - Sima S50 Concrete Mixing Bucket (500 Litre),Sima S50 Concrete Mixing Bucket (500 Litre),Hour,,,,,,,,,,,TRUE
+A107,A107 - Jib Extension (25t Excavator),Jib Extension (25t Excavator),Hour,,,,,,,,,,,TRUE
+A108,"A108 - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A109,"A109 - Dropside Trailer Ifor Williams 3,500Kg","Dropside Trailer Ifor Williams 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A110,A110 - 2 Man Basket Boscaro (2021),2 Man Basket Boscaro (2021),Hour,,,,,,,,,,,TRUE
+A111,"A111 - Teleporter Tipping Skip - 2,000Kg","Teleporter Tipping Skip - 2,000Kg",Hour,,,,,,,,,,,TRUE
+A112,"A112 - Teleporter Tipping Skip - 2,000Kg","Teleporter Tipping Skip - 2,000Kg",Hour,,,,,,,,,,,TRUE
+A113,"A113 - Teleporter Tipping Skip - 2,000Kg","Teleporter Tipping Skip - 2,000Kg",Hour,,,,,,,,,,,TRUE
+A114,A114 - Riddle Bucket - 2m Wide,Riddle Bucket - 2m Wide,Hour,,,,,,,,,,,TRUE
+A115,A115 - Rock Breaker Epiroc SB152 4 Tonne,Rock Breaker Epiroc SB152 4 Tonne,Hour,,,,,,,,,,,TRUE
+A116,A116 - Rock Breaker Epiroc MB1200CL 15-26 Tonne,Rock Breaker Epiroc MB1200CL 15-26 Tonne,Hour,,,,,,,,,,,TRUE
+A117,A117 - Grading Rake G-Rake GR150 5/8 Tonne,Grading Rake G-Rake GR150 5/8 Tonne,Hour,,,,,,,,,,,TRUE
+A118,"A118 - Water Bowser c/w Power Washer 2,000 Litre","Water Bowser c/w Power Washer 2,000 Litre",Hour,,,,,,,,,,,TRUE
+A119,"A119 - Hydraulic Pallet Fork - 4,000Kg","Hydraulic Pallet Fork - 4,000Kg",Hour,,,,,,TRUE,,,,,TRUE
+A120,"A120 - Teleporter Tipping Skip - 2,000Kg","Teleporter Tipping Skip - 2,000Kg",Hour,,,,,,,,,,,TRUE
+A121,"A121 - Bunded Diesel Tank 1,920 Litre (2005)","Bunded Diesel Tank 1,920 Litre (2005)",Hour,,,,,,,,,,,TRUE
+A122,A122 - Rock Breaker Epiroc SB202 6 Tonne,Rock Breaker Epiroc SB202 6 Tonne,Hour,,,,,,,,,,,TRUE
+A123,A123 - Trailer Curtain Sider (40' x 8'),Trailer Curtain Sider (40' x 8'),Hour,,,,,,,TRUE,,,,TRUE
+A124,"A124 - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A125,A125 - Tipping Trailer Schmitz (2016),Tipping Trailer Schmitz (2016),Hour,,,,,,,TRUE,,,,TRUE
+A126,"A126 - Hydraulic Pallet Fork - 4,000Kg","Hydraulic Pallet Fork - 4,000Kg",Hour,,,,,,TRUE,,,,,TRUE
+A127,A127 - Box Van Trailer Ifor Williams 3500Kg,Box Van Trailer Ifor Williams 3500Kg,Hour,,,,,,,TRUE,,,,TRUE
+A128,A128 - Rock Breaker Epiroc SB202 6 Tonne,Rock Breaker Epiroc SB202 6 Tonne,Hour,,,,,,,,,,,TRUE
+A129,A129 - Rock Breaker Epiroc SB202 6 Tonne,Rock Breaker Epiroc SB202 6 Tonne,Hour,,,,,,,,,,,TRUE
+A130,A130 - Low Loader Trailer Noteboom (2013),Low Loader Trailer Noteboom (2013),Hour,,,,,,,TRUE,,,,TRUE
+A131,A131 - Pole / Pipe Grab,Pole / Pipe Grab,Hour,,,,,,,,,,,TRUE
+A132,A132 - Mulcher for Excavator FAE UML/S/EX (2024),Mulcher for Excavator FAE UML/S/EX (2024),Hour,,,,,,,,,,,TRUE
+A133,"A133 - Plant Trailer Nugent 3,500Kg","Plant Trailer Nugent 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A134,A134 - Line Marking Trailer Somerford (2024),Line Marking Trailer Somerford (2024),Hour,,,,,,,TRUE,,,,TRUE
+A135,"A135 - Boat Skip - 2,000 Litres","Boat Skip - 2,000 Litres",Hour,,,,,,,,,,,TRUE
+A136,A136 - Diesel Bowser Western Global - 985 Litre (2020),Diesel Bowser Western Global - 985 Litre (2020),Hour,,,,,,,,,,,TRUE
+A137,A137 - Diesel Bowser Fuel Cube - 900 Litre (2022),Diesel Bowser Fuel Cube - 900 Litre (2022),Hour,,,,,,,,,,,TRUE
+A138,A138 - Diesel Bowser Fuel Cube - 900 Litre (2022),Diesel Bowser Fuel Cube - 900 Litre (2022),Hour,,,,,,,,,,,TRUE
+A139,A139 - Diesel Bowser Fuel Cube - 900 Litre (2023),Diesel Bowser Fuel Cube - 900 Litre (2023),Hour,,,,,,,,,,,TRUE
+A140,"A140 - Teleporter Tipping Skip - 2,000Kg","Teleporter Tipping Skip - 2,000Kg",Hour,,,,,,,,,,,TRUE
+A141,"A141 - Teleporter Tipping Skip - 2,000Kg","Teleporter Tipping Skip - 2,000Kg",Hour,,,,,,,,,,,TRUE
+A142,"A142 - Teleporter Tipping Skip - 2,000Kg","Teleporter Tipping Skip - 2,000Kg",Hour,,,,,,,,,,,TRUE
+A143,"A143 - Teleporter Tipping Skip - 2,000Kg","Teleporter Tipping Skip - 2,000Kg",Hour,,,,,,,,,,,TRUE
+A144,A144 - Cement Silo - Horizontal Trailer Mounted - 20 Tonne,Cement Silo - Horizontal Trailer Mounted - 20 Tonne,Hour,,,,,,,TRUE,,,,TRUE
+A145,A145 - Diesel Bowser Fuel Cube - 900 Litre (2025),Diesel Bowser Fuel Cube - 900 Litre (2025),Hour,,,,,,,,,,,TRUE
+A146,A146 - Trailer Curtain Sider (40' x 8'),Trailer Curtain Sider (40' x 8'),Hour,,,,,,,TRUE,,,,TRUE
+A147,A147 - Trailer Curtain Sider (40' x 8'),Trailer Curtain Sider (40' x 8'),Hour,,,,,,,TRUE,,,,TRUE
+A148,A148 - Digging Bucket to suit Case CX245 - 1050mm,Digging Bucket to suit Case CX245 - 1050mm,Hour,,,,,,,,,,,TRUE
+A149,A149 - Cutting Edge to suit 9m Dia. Manhole,Cutting Edge to suit 9m Dia. Manhole,Day,,,,,,,,,,,TRUE
+A151,"A151 - Trailer Triple Axle Drop Sides 3,500Kg","Trailer Triple Axle Drop Sides 3,500Kg",Hour,,,,,,,TRUE,,,,TRUE
+A152,A152 - Rockbreaker Epiroc SB202 6 Tonne,Rockbreaker Epiroc SB202 6 Tonne,Hour,,,,,,,,,,,TRUE

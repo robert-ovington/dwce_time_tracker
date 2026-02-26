@@ -1,0 +1,73 @@
+{
+  "database_path": "C:\\Users\\robie\\AppData\\Roaming\\Cursor\\User\\globalStorage\\state.vscdb",
+  "extracted_at": "2026-01-04T19:02:58.191433",
+  "chat_data": {
+    "workbench.panel.composerChatViewPane.4e329685-ec37-455e-9a73-2d5976a136d1.hidden": [
+      {
+        "id": "workbench.panel.aichat.view.a0a381f6-d41a-41f6-803f-ffad0f30576e",
+        "isHidden": false
+      }
+    ],
+    "cursor/composerAutocompleteHeuristicsEnabled": true,
+    "cursor/composerAutocompleteHeuristicsAutoApplied": true,
+    "composer.planMigrationToHomeDirCompleted": true,
+    "interactive.sessions": [],
+    "conversationClassificationScoredConversations": [],
+    "workbench.backgroundComposer.persistentData": {
+      "dataVersion": 1,
+      "lastOpenedBcIds": {}
+    },
+    "workbench.panel.composerChatViewPane.566ee1ab-ea58-4e87-a882-fb5948a584af.hidden": [
+      {
+        "id": "workbench.panel.aichat.view.2ddd3c75-315b-449d-8bad-61777cb7a77d",
+        "isHidden": false
+      }
+    ],
+    "workbench.panel.composerChatViewPane.000940f7-5c73-481b-8cc3-4917508cac88.hidden": [
+      {
+        "id": "workbench.panel.aichat.view.f7ca9699-1e79-4e68-8d4d-f105a86df02b",
+        "isHidden": false
+      },
+      {
+        "id": "workbench.panel.aichat.view.66e1adf3-511c-4a69-b381-a9b58e974df0",
+        "isHidden": false
+      },
+      {
+        "id": "workbench.panel.aichat.view.0fb1a289-f1a3-4aa1-93c0-6673a8fff028",
+        "isHidden": false
+      }
+    ],
+    "workbench.panel.composerChatViewPane.c1138544-ffe5-46f7-baf8-fb9f591f4040.hidden": [
+      {
+        "id": "workbench.panel.aichat.view.b62146ba-474d-4c60-b048-544aa9e1f43b",
+        "isHidden": false
+      }
+    ],
+    "workbench.panel.composerChatViewPane.6afe8c8c-bb88-4339-bf57-8ac4a69013f4.hidden": [
+      {
+        "id": "workbench.panel.aichat.view.6a8ad320-5824-4bf4-8af2-25585119abb2",
+        "isHidden": false
+      }
+    ],
+    "workbench.panel.composerChatViewPane.fc2639b2-8cfd-46b0-b8d3-88c25e9c61db.hidden": [
+      {
+        "id": "workbench.panel.aichat.view.ceb46abe-4350-4854-b624-ec5caa49dfb2",
+        "isHidden": false
+      }
+    ],
+    "composer.hasReopenedOnce": true,
+    "chat.workspaceTransfer": [],
+    "workbench.panel.composerChatViewPane.886fe2aa-80e0-4ed8-af23-e3330d3be300.hidden": [
+      {
+        "id": "workbench.panel.aichat.view.0fb1a289-f1a3-4aa1-93c0-6673a8fff028",
+        "isHidden": false
+      }
+    ],
+    "workbench.panel.composerChatViewPane.0a4299f9-a7a6-4782-a78c-a20e4f444445.hidden": [
+      {
+        "id": "workbench.panel.aichat.view.0fb1a289-f1a3-4aa1-93c0-6673a8fff028",
+        "isHidden": false
+      }
+    ]
+  }
+}
