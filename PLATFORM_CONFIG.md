@@ -76,22 +76,22 @@ flutter build windows
 
 ```bash
 # Run
-flutter run -t lib/main_mobile.dart -d <device_id>
+flutter run --target lib/main_mobile.dart -d <device_id>
 
 # Build
-flutter build apk -t lib/main_mobile.dart
-flutter build ios -t lib/main_mobile.dart
+flutter build apk --target lib/main_mobile.dart
+flutter build ios --target lib/main_mobile.dart   # macOS only (not available on Windows)
 ```
 
 ### Lite app (bare minimum for basic users)
 
 ```bash
 # Run
-flutter run -t lib/lite_mobile.dart -d <device_id>
+flutter run --target lib/lite_mobile.dart -d <device_id>
 
 # Build
-flutter build apk -t lib/lite_mobile.dart
-flutter build ios -t lib/lite_mobile.dart
+flutter build apk --target lib/lite_mobile.dart
+flutter build ios --target lib/lite_mobile.dart   # macOS only
 ```
 
 ### List devices

@@ -2,6 +2,8 @@
 
 This guide walks you through setting up a MacBook Pro to compile the **dwce_time_tracker** Flutter project and produce an installable app for iPhone (simulator, device, or App Store–ready archive).
 
+> **Important:** `flutter build ios` is **only available on macOS**. On Windows, Flutter does not include an iOS build command (only `apk`, `appbundle`, `web`, `windows`, etc.). You must run the iOS build steps below on your MacBook.
+
 ---
 
 ## Prerequisites
@@ -242,13 +244,13 @@ You’ll see connected iPhones and available iOS simulators.
 
 ```bash
 # Default (full) app
-flutter run -d "iPhone 16" -t lib/main.dart
+flutter run -d "iPhone 16" --target lib/main.dart
 
 # Mobile-only app (smaller; recommended for phones)
-flutter run -t lib/main_mobile.dart -d "iPhone 16"
+flutter run --target lib/main_mobile.dart -d "iPhone 16"
 
 # Lite app
-flutter run -t lib/lite_mobile.dart -d "iPhone 16"
+flutter run --target lib/lite_mobile.dart -d "iPhone 16"
 ```
 
 Replace `"iPhone 16"` with the simulator name from `flutter devices`.
@@ -261,25 +263,29 @@ Replace `"iPhone 16"` with the simulator name from `flutter devices`.
 4. In Terminal:
 
    ```bash
-   flutter run -t lib/main_mobile.dart -d <device_id>
+   flutter run --target lib/main_mobile.dart -d <device_id>
    ```
 
    Use the device id from `flutter devices` (e.g. a long hex string or device name).
 
 ### Build an iOS release (for archive or device)
 
+**Run these commands on your Mac** (not on Windows; iOS build is macOS-only).
+
 This produces the Xcode project/archive that you can then run or archive for distribution.
 
 ```bash
 # Mobile app (recommended for iPhone)
-flutter build ios -t lib/main_mobile.dart
+flutter build ios --target lib/main_mobile.dart
 
 # Lite app
-flutter build ios -t lib/lite_mobile.dart
+flutter build ios --target lib/lite_mobile.dart
 
 # Full app (all platforms)
-flutter build ios -t lib/main.dart
+flutter build ios --target lib/main.dart
 ```
+
+If your Mac’s Flutter doesn’t accept `--target`, set the entry point in Xcode instead: open `ios/Runner.xcworkspace` → select the **Runner** target → **Build Settings** → search for **FLUTTER_TARGET** → set to `lib/main_mobile.dart` (or the entry point you want).
 
 After a successful build, the app is in `build/ios/iphoneos/` and the Xcode project is updated. You can open the app in Xcode to run on a device or create an archive.
 
@@ -310,9 +316,9 @@ After `flutter build ios`, you can use `xcodebuild` and `xcrun` to create an IPA
 
 | Build type   | Command |
 |-------------|---------|
-| Run (simulator) | `flutter run -t lib/main_mobile.dart -d "iPhone 16"` |
-| Run (device)    | `flutter run -t lib/main_mobile.dart -d <device_id>` |
-| Build iOS       | `flutter build ios -t lib/main_mobile.dart` |
+| Run (simulator) | `flutter run --target lib/main_mobile.dart -d "iPhone 16"` |
+| Run (device)    | `flutter run --target lib/main_mobile.dart -d <device_id>` |
+| Build iOS       | `flutter build ios --target lib/main_mobile.dart` |
 | Open in Xcode   | `open ios/Runner.xcworkspace` |
 | Create IPA/TestFlight | Xcode: **Product → Archive** → **Distribute App** |
 
