@@ -20,6 +20,7 @@ import 'package:dwce_time_tracker/modules/messaging/messaging_service.dart';
 import 'package:dwce_time_tracker/app_config.dart';
 import 'package:dwce_time_tracker/screens/login_screen.dart';
 import 'package:dwce_time_tracker/screens/main_menu_screen.dart';
+import 'package:dwce_time_tracker/screens/paper_timesheet_screen.dart';
 
 // Conditional import for web
 import 'web_supabase_expose_stub.dart'
@@ -153,6 +154,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final q = Uri.base.queryParameters;
+    final printMode = kIsWeb && q['print'] == 'margins' ? 'margins' : null;
     return MaterialApp(
       title: 'DWCE Time Tracker',
       theme: ThemeData(
@@ -171,7 +174,9 @@ class MyApp extends StatelessWidget {
           child: child,
         );
       },
-      home: const LoginScreen(),
+      home: printMode != null
+          ? const PaperTimesheetPrintOnlyView()
+          : const LoginScreen(),
     );
   }
 }

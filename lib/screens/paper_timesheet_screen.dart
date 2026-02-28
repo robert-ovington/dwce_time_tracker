@@ -1,5 +1,40 @@
 import 'package:dwce_time_tracker/config/supabase_config.dart';
+import 'package:dwce_time_tracker/utils/paper_timesheet_print.dart' show forcePrintViewportSize, openTimesheetPrintWindow, printPaperTimesheet;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+
+/// Shown when the app is opened with ?print=margins (new window). Layout is trimmed 20px on all sides.
+class PaperTimesheetPrintOnlyView extends StatefulWidget {
+  const PaperTimesheetPrintOnlyView({super.key});
+
+  @override
+  State<PaperTimesheetPrintOnlyView> createState() => _PaperTimesheetPrintOnlyViewState();
+}
+
+class _PaperTimesheetPrintOnlyViewState extends State<PaperTimesheetPrintOnlyView> {
+  @override
+  void initState() {
+    super.initState();
+    if (kIsWeb) {
+      forcePrintViewportSize();
+      WidgetsBinding.instance.addPostFrameCallback((_) async {
+        if (!mounted) return;
+        forcePrintViewportSize();
+        await Future<void>.delayed(const Duration(milliseconds: 400));
+        if (!mounted) return;
+        forcePrintViewportSize();
+        await Future<void>.delayed(const Duration(milliseconds: 400));
+        if (!mounted) return;
+        await printPaperTimesheet();
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return const PaperTimesheetScreen(printOnly: true);
+  }
+}
 
 /// Row descriptor for Period section. Horizontal lines are row borders (no separate Line rows).
 class PeriodRowSpec {
@@ -22,16 +57,19 @@ class PeriodRowSpec {
 }
 
 /// Paper timesheet – five sections with red border each, exact sizes. Scrollable so no overflow.
-/// 1. Header 1122×40  2. Footer 1122×34  3. Period 900×720 (left)
+/// 1. Header 1078×20  2. Footer 1078×20  3. Period 876×720 (Day 26px, table 850px)  4. Admin 202×… (no right margin)
 /// 4. Admin Header 202×20, Admin 182×560, Admin Days 20×560, Admin Bottom 202×140 (right)  5. Border 20×720 (right).
 class PaperTimesheetScreen extends StatelessWidget {
-  const PaperTimesheetScreen({super.key});
+  const PaperTimesheetScreen({super.key, this.printOnly = false});
 
-  static const double _headerWidth = 1122;
-  static const double _headerHeight = 40;
-  static const double _footerWidth = 1122;
-  static const double _footerHeight = 34;
-  static const double _periodWidth = 900;
+  /// When true, build only the timesheet content (no AppBar). Full page fits in viewport for reliable print.
+  final bool printOnly;
+
+  static const double _headerWidth = 1078; // Weekday (26) + Period table (850) + Admin/Office (202)
+  static const double _headerHeight = 20;
+  static const double _footerWidth = 1078;
+  static const double _footerHeight = 20;
+  static const double _periodWidth = 876;
   static const double _periodHeight = 720;
   static const double _adminWidth = 202;
   static const double _adminHeaderHeight = 20.0;
@@ -43,71 +81,125 @@ class PaperTimesheetScreen extends StatelessWidget {
     'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday',
   ];
   static const double _adminBottomHeight = 140;
-  static const double _adminBorderWidth = 20.0;
   static const double _adminBorderHeight = 720.0;
+
+  /// Print view: 2x scale for resolution. Page size is fixed in HTML (2156×1520) so display area matches.
+  static const double _printScale = 2.0;
 
   @override
   Widget build(BuildContext context) {
+    if (printOnly) {
+      const contentWidth = _headerWidth;
+      const contentHeight = _headerHeight + _adminBorderHeight + _footerHeight; // 760
+      final scaledWidth = contentWidth * _printScale;
+      final scaledHeight = contentHeight * _printScale;
+      return Scaffold(
+        backgroundColor: Colors.white,
+        body: Align(
+          alignment: Alignment.topLeft,
+          child: SizedBox(
+            width: scaledWidth,
+            height: scaledHeight,
+            child: Transform.scale(
+              scale: _printScale,
+              alignment: Alignment.topLeft,
+              child: SizedBox(
+                width: contentWidth,
+                height: contentHeight,
+                child: buildBodyContent(),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
     return Scaffold(
       appBar: AppBar(
         title: const Text('Paper Timesheet (Template)'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.print),
+            tooltip: 'Print / Save as PDF (trimmed 20px on all sides)',
+            onPressed: () async {
+              if (kIsWeb) {
+                openTimesheetPrintWindow('margins');
+              } else {
+                final ok = await printPaperTimesheet();
+                if (context.mounted && !ok) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text(
+                        'Print is available on web: use the Print button, then choose "Save as PDF". Layout is trimmed 20px on all sides; use landscape and "Fit to page" for best results.',
+                      ),
+                    ),
+                  );
+                }
+              }
+            },
+          ),
+        ],
       ),
       body: Center(
         child: SingleChildScrollView(
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-            children: [
-              _buildHeader(),
-              SizedBox(
-                height: _adminBorderHeight,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const _PeriodSectionWidget(),
-                    Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      _section('Office', _adminWidth, _adminHeaderHeight),
-                      Row(
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          _buildAdminGrid(),
-                          _buildAdminDays(),
-                        ],
-                      ),
-                      _section('Admin Bottom', _adminWidth, _adminBottomHeight),
-                    ],
-                  ),
-                  Container(
-                    width: _adminBorderWidth,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(color: Colors.red, width: 1),
-                    ),
-                  ),
-                ],
-                ),
-              ),
-              _buildFooter(),
-            ],
-            ),
+            child: buildBodyContent(),
           ),
         ),
       ),
     );
   }
 
-  /// Header: 1122×40. Print border 16px L/R; 10px unused top, 30px text row.
-  /// Proportional to: 16, 80, 309, 120, 152, 120, 299, 16 (scaled to fit 1122 with 7 dividers).
+  /// The timesheet content (header + middle row + footer) for both normal and print view.
+  Widget buildBodyContent() {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        _buildHeader(),
+        SizedBox(
+          height: _adminBorderHeight,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const _PeriodSectionWidget(),
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _section(
+                    'Office',
+                    _adminWidth,
+                    _adminHeaderHeight,
+                    borderColor: Colors.black,
+                    borderWidthTop: 2,
+                    borderWidthRight: 2,
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildAdminGrid(),
+                      _buildAdminDays(),
+                    ],
+                  ),
+                  _buildAdminBottomSection(),
+                ],
+              ),
+            ],
+          ),
+        ),
+        _buildFooter(),
+      ],
+    );
+  }
+
+  /// Header: 1078×20. 16px text row.
+  /// Proportional to: 16, 80, 309, 120, 152, 120, 299, 16 (scaled to fit 1078 with 7 dividers).
   Widget _buildHeader() {
-    const topPadding = 10.0;
-    const totalContent = 1113.0; // 1120 - 7 dividers
+    const textRowHeight = 16.0;
+    final totalContent = _headerWidth - 7.0; // width minus 7 dividers
     const specTotal = 1122.0; // 16+80+309+120+152+120+299+16
-    const scale = totalContent / specTotal;
+    final scale = totalContent / specTotal;
     final widths = [
       16 * scale, 80 * scale, 309 * scale, 120 * scale,
       152 * scale, 120 * scale, 299 * scale, 16 * scale,
@@ -121,47 +213,47 @@ class PaperTimesheetScreen extends StatelessWidget {
       height: _headerHeight,
       decoration: BoxDecoration(
         color: Colors.white,
-        border: Border.all(color: Colors.red, width: 1),
+        border: Border.all(color: Colors.white, width: 1),
       ),
-      child: Padding(
-        padding: const EdgeInsets.only(top: topPadding),
+      child: Align(
+        alignment: Alignment.topLeft,
         child: Row(
-            children: [
-              SizedBox(width: widths[0]),
-              _headerDivider(),
-              _headerCell(widths[1], labels[0], bold: true, isData: false),
-              _headerDivider(),
-              _headerCell(widths[2], values[0], bold: false, isData: true),
-              _headerDivider(),
-              _headerCell(widths[3], labels[1], bold: true, isData: false),
-              _headerDivider(),
-              _headerCell(widths[4], values[1], bold: false, isData: true),
-              _headerDivider(),
-              _headerCell(widths[5], labels[2], bold: true, isData: false),
-              _headerDivider(),
-              _headerCell(widths[6], values[2], bold: false, isData: true),
-              _headerDivider(),
-              SizedBox(width: widths[7]),
-            ],
+          children: [
+            SizedBox(width: widths[0]),
+            _headerDivider(textRowHeight),
+            _headerCell(widths[1], labels[0], textRowHeight, bold: true, isData: false),
+            _headerDivider(textRowHeight),
+            _headerCell(widths[2], values[0], textRowHeight, bold: false, isData: true),
+            _headerDivider(textRowHeight),
+            _headerCell(widths[3], labels[1], textRowHeight, bold: true, isData: false),
+            _headerDivider(textRowHeight),
+            _headerCell(widths[4], values[1], textRowHeight, bold: false, isData: true),
+            _headerDivider(textRowHeight),
+            _headerCell(widths[5], labels[2], textRowHeight, bold: true, isData: false),
+            _headerDivider(textRowHeight),
+            _headerCell(widths[6], values[2], textRowHeight, bold: false, isData: true),
+            _headerDivider(textRowHeight),
+            SizedBox(width: widths[7]),
+          ],
         ),
       ),
     );
   }
 
-  Widget _headerDivider() {
+  Widget _headerDivider(double height) {
     return Container(
       width: 1,
-      height: 30,
+      height: height,
       color: Colors.white,
     );
   }
 
-  Widget _headerCell(double w, String text, {bool bold = false, bool isData = false}) {
+  Widget _headerCell(double w, String text, double height, {bool bold = false, bool isData = false}) {
     return SizedBox(
       width: w,
-      height: 30,
+      height: height,
       child: Align(
-        alignment: isData ? Alignment.center : Alignment.centerRight,
+        alignment: isData ? Alignment.topCenter : Alignment.topRight,
         child: Text(
           text,
           textAlign: isData ? TextAlign.center : TextAlign.right,
@@ -176,44 +268,35 @@ class PaperTimesheetScreen extends StatelessWidget {
     );
   }
 
-  /// Footer: 1122×34. Print border 20px L/R; 18px text row, 16px unused bottom.
+  /// Footer: 1078×20. 14px text row.
   /// Text: PW - Paperwork, ET - Extra Travel, OC - On Call, MS - Miscellaneous, etc.
   Widget _buildFooter() {
     const footerText =
         'PW - Paperwork, ET - Extra Travel, OC - On Call, MS - Miscellaneous, '
         'NW - Non Worked Hours, EA - Eating Allowance, FT - Flat Time, '
         'TH - Time & Half, DT - Double Time, CM - Country Money';
-    const textHeight = 18.0;
-    const bottomPadding = 16.0;
-    const horizontalPadding = 19.0;
+    const textHeight = 14.0;
 
     return Container(
       width: _footerWidth,
       height: _footerHeight,
       decoration: BoxDecoration(
         color: Colors.white,
-        border: Border.all(color: Colors.red, width: 1),
+        border: Border.all(color: Colors.white, width: 1),
       ),
-      child: Padding(
-        padding: const EdgeInsets.only(
-          left: horizontalPadding,
-          right: horizontalPadding,
-          bottom: bottomPadding,
-        ),
-        child: Align(
-          alignment: Alignment.center,
-          child: SizedBox(
-            height: textHeight,
-            child: Text(
-              footerText,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 12,
-                color: Colors.black,
-              ),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: SizedBox(
+          height: textHeight,
+          child: Text(
+            footerText,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontSize: 12,
+              color: Colors.black,
             ),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
           ),
         ),
       ),
@@ -254,7 +337,7 @@ class PaperTimesheetScreen extends StatelessWidget {
       height: _adminMainHeight,
       decoration: BoxDecoration(
         color: Colors.white,
-        border: Border.all(color: Colors.red, width: 1),
+        border: Border.all(color: Colors.black, width: 1),
       ),
       child: Table(
         border: TableBorder.all(color: Colors.black, width: 1),
@@ -315,7 +398,12 @@ class PaperTimesheetScreen extends StatelessWidget {
             height: _adminDaysSectionHeight,
             decoration: BoxDecoration(
               color: Colors.white,
-              border: Border.all(color: Colors.black, width: 1),
+              border: Border(
+                top: const BorderSide(color: Colors.black, width: 1),
+                right: const BorderSide(color: Colors.black, width: 2),
+                bottom: const BorderSide(color: Colors.black, width: 1),
+                left: const BorderSide(color: Colors.black, width: 1),
+              ),
             ),
             alignment: Alignment.center,
             child: RotatedBox(
@@ -330,21 +418,93 @@ class PaperTimesheetScreen extends StatelessWidget {
     );
   }
 
-  Widget _section(String name, double width, double height) {
+  /// Admin Section (Bottom): 202×140, 6 cols (A–F) × 4 rows. 1px borders; outer border black.
+  /// Col widths (scaled to fit 202 with 1px borders): 39,42,39,42,39,42 → 197 content + 5 = 202.
+  /// Row heights: 35 px per row (4 × 35 = 140).
+  static const List<String> _adminBottomColALabels = ['PW', 'ET', 'OC', 'MS'];
+  static const List<String> _adminBottomColCLabels = ['NW FT', 'NW FH', 'NW DT', 'EA'];
+  static const List<String> _adminBottomColELabels = ['FT', 'TH', 'DT', 'CM'];
+
+  Widget _buildAdminBottomSection() {
+    const targetColSum = 39 + 42 + 39 + 42 + 39 + 42; // 243
+    const verticalBorderPx = 5.0; // 6 columns → 5 internal vertical borders
+    final contentWidth = _adminWidth - verticalBorderPx; // 197
+    // First and fifth columns −2 px each; third column +4 px (net 0).
+    final colWidths = [
+      (39 / targetColSum) * contentWidth - 2,
+      (42 / targetColSum) * contentWidth,
+      (39 / targetColSum) * contentWidth + 4,
+      (42 / targetColSum) * contentWidth,
+      (39 / targetColSum) * contentWidth - 2,
+      (42 / targetColSum) * contentWidth,
+    ];
+    const rowHeight = 35.0;
+
+    return Container(
+      width: _adminWidth,
+      height: _adminBottomHeight,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border(
+          top: const BorderSide(color: Colors.black, width: 1),
+          right: const BorderSide(color: Colors.black, width: 1),
+          bottom: const BorderSide(color: Colors.black, width: 2),
+          left: const BorderSide(color: Colors.black, width: 1),
+        ),
+      ),
+      child: Table(
+        border: TableBorder.all(color: Colors.black, width: 1),
+        columnWidths: {
+          for (var i = 0; i < colWidths.length; i++) i: FixedColumnWidth(colWidths[i]),
+        },
+        children: [
+          for (var r = 0; r < 4; r++)
+            TableRow(
+              children: [
+                _adminGridCell(rowHeight, _adminBottomColALabels[r]),
+                _adminGridCell(rowHeight, ''),
+                _adminGridCell(rowHeight, _adminBottomColCLabels[r]),
+                _adminGridCell(rowHeight, ''),
+                _adminGridCell(rowHeight, _adminBottomColELabels[r]),
+                _adminGridCell(rowHeight, ''),
+              ],
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _section(
+    String name,
+    double width,
+    double height, {
+    Color borderColor = Colors.black,
+    double borderWidthTop = 1,
+    double borderWidthRight = 1,
+    double borderWidthBottom = 1,
+    double borderWidthLeft = 1,
+  }) {
     return Container(
       width: width,
       height: height,
       decoration: BoxDecoration(
         color: Colors.white,
-        border: Border.all(color: Colors.red, width: 1),
+        border: Border(
+          top: BorderSide(color: borderColor, width: borderWidthTop),
+          right: BorderSide(color: borderColor, width: borderWidthRight),
+          bottom: BorderSide(color: borderColor, width: borderWidthBottom),
+          left: BorderSide(color: borderColor, width: borderWidthLeft),
+        ),
       ),
       alignment: Alignment.center,
-      child: Text(
-        '$name\n${width.toInt()} × ${height.toInt()}',
-        textAlign: TextAlign.center,
-        style: const TextStyle(
-          color: Colors.black,
-          fontSize: 15,
+      child: Center(
+        child: Text(
+          '$name\n${width.toInt()} × ${height.toInt()}',
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            color: Colors.black,
+            fontSize: 15,
+          ),
         ),
       ),
     );
@@ -360,11 +520,12 @@ class _PeriodSectionWidget extends StatefulWidget {
 }
 
 class _PeriodSectionWidgetState extends State<_PeriodSectionWidget> {
-  static const double _periodWidth = 900;
+  static const double _periodWidth = 876;
   static const double _lineW = 1.0;
   static const double _tableTopW = 1.0;
   static const double _tableBottomW = 0.0;
   static const double _periodLeftBorderW = 2.0;
+  static const double _periodHeaderTopBorderW = 2.0;
   static const double _periodBottomBorderW = 2.0;
   static const double _horizontalInsideW = 0.0;
   static const double _verticalInsideW = 1.0;
@@ -437,9 +598,8 @@ class _PeriodSectionWidgetState extends State<_PeriodSectionWidget> {
     return list;
   }
 
-  static const double _columnAWidth = 20.0;
-  static const double _periodDayColumnWidth = 30.0;
-  /// Column widths: col A = 20, Day column = 30, table cols = 850 (17 columns: Project 190, Job No. 60, Start/Break/Finish 40 each, Plant 1–6 + Mob 1–4 @ 40 each, Travel 40, Check 40).
+  static const double _periodDayColumnWidth = 26.0;
+  /// Column widths: Day column = 26, table cols = 850 (17 columns: Project 190, Job No. 60, Start/Break/Finish 40 each, Plant 1–6 + Mob 1–4 @ 40 each, Travel 40, Check 40).
   static Map<int, double> _tableColWidths() {
     return {
       0: 190.0, 1: 60.0, 2: 40.0, 3: 40.0, 4: 40.0,
@@ -484,12 +644,12 @@ class _PeriodSectionWidgetState extends State<_PeriodSectionWidget> {
     final dataEntries = visibleEntries.where((e) => e.value.type != 'Header').toList();
     final dataRowHeights = dataEntries.map((e) => e.value.rowHeight.toDouble()).toList();
     final dataTotalHeight = _tableTopW + dataRowHeights.fold<double>(0.0, (s, h) => s + h);
-    final periodHeaderSectionHeight = _tableTopW + _periodHeaderRowHeight + _periodBottomBorderW;
+    final periodHeaderSectionHeight = _periodHeaderTopBorderW + _periodHeaderRowHeight + _periodBottomBorderW;
     const minPeriodHeight = 720.0;
     final contentHeight = periodHeaderSectionHeight + dataTotalHeight;
     final sectionHeight = contentHeight.clamp(minPeriodHeight, double.infinity); // min 720 so no gap to footer
     final effectiveTableHeight = (sectionHeight - periodHeaderSectionHeight).clamp(0.0, dataTotalHeight); // one body height for table and weekday column
-    final tableWidth = _periodWidth - _columnAWidth - _periodDayColumnWidth; // 850
+    final tableWidth = _periodWidth - _periodDayColumnWidth; // 850
 
     // Per-day visible row heights and row counts (7 weekdays) for the separate Day column.
     final dayHeights = List.filled(7, 0.0);
@@ -503,23 +663,31 @@ class _PeriodSectionWidgetState extends State<_PeriodSectionWidget> {
     }
     final dayHeightsSum = dayHeights.fold<double>(0.0, (s, h) => s + h);
 
-    // Period Header: single table 880 px wide with "Day" (30 px) as first column then Project..Check (17 columns).
-    final headerColumnWidths = <int, double>{0: _periodDayColumnWidth};
-    _tableColWidths().forEach((k, v) => headerColumnWidths[k + 1] = v);
+    // Period Header: single table 876 px wide. Day (26) then Project..Finish, single "Plant 1" (width Plant 1–6), single "Mob 1" (width Mob 1–4), Travel, Check. Data table unchanged (still 17 cols).
+    final tableCols = _tableColWidths();
+    final plant1To6Width = tableCols[5]! + tableCols[6]! + tableCols[7]! + tableCols[8]! + tableCols[9]! + tableCols[10]!;
+    final mob1To4Width = tableCols[11]! + tableCols[12]! + tableCols[13]! + tableCols[14]!;
+    final periodHeaderColumnWidths = <int, double>{
+      0: _periodDayColumnWidth,
+      1: tableCols[0]!, 2: tableCols[1]!, 3: tableCols[2]!, 4: tableCols[3]!, 5: tableCols[4]!,
+      6: plant1To6Width,
+      7: mob1To4Width,
+      8: tableCols[15]!, 9: tableCols[16]!,
+    };
     final periodHeaderSection = SizedBox(
       width: tableWidth + _periodDayColumnWidth,
       child: Container(
         color: Colors.white,
         child: Table(
           border: TableBorder(
-            left: BorderSide(color: Colors.black, width: _periodLeftBorderW), // Period Header: 2 px left border
-            top: BorderSide(color: Colors.black, width: _tableTopW),
+            left: BorderSide(color: Colors.black, width: _periodLeftBorderW),
+            top: BorderSide(color: Colors.black, width: _periodHeaderTopBorderW),
             right: BorderSide(color: Colors.black, width: _lineW),
             bottom: BorderSide(color: Colors.black, width: _periodBottomBorderW),
             horizontalInside: BorderSide(color: Colors.black, width: _horizontalInsideW),
             verticalInside: BorderSide(color: Colors.black, width: _verticalInsideW),
           ),
-          columnWidths: headerColumnWidths.map((k, v) => MapEntry(k, FixedColumnWidth(v))),
+          columnWidths: periodHeaderColumnWidths.map((k, v) => MapEntry(k, FixedColumnWidth(v))),
           children: [
             TableRow(
               decoration: BoxDecoration(
@@ -533,16 +701,8 @@ class _PeriodSectionWidgetState extends State<_PeriodSectionWidget> {
                 PaperTimesheetScreen.cell('Start', _periodHeaderRowHeight, bold: true),
                 PaperTimesheetScreen.cell('Break', _periodHeaderRowHeight, bold: true),
                 PaperTimesheetScreen.cell('Finish', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Plant 1', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Plant 2', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Plant 3', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Plant 4', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Plant 5', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Plant 6', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Mob 1', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Mob 2', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Mob 3', _periodHeaderRowHeight, bold: true),
-                PaperTimesheetScreen.cell('Mob 4', _periodHeaderRowHeight, bold: true),
+                PaperTimesheetScreen.cell('Plant Number / Hired Plant', _periodHeaderRowHeight, bold: true),
+                PaperTimesheetScreen.cell('Mobilised Plant', _periodHeaderRowHeight, bold: true),
                 PaperTimesheetScreen.cell('Travel', _periodHeaderRowHeight, bold: true),
                 PaperTimesheetScreen.cell('Check', _periodHeaderRowHeight, bold: true),
               ],
@@ -552,13 +712,17 @@ class _PeriodSectionWidgetState extends State<_PeriodSectionWidget> {
       ),
     );
 
-    // Data rows (all visible entries; Day column is separate so 17 cells per row). Internal horizontal lines 1 px total (bottom only).
+    // Data rows: no bottom between 1 and 104; only last row has bottom. Top: first row (i==0) 0px; 2px above start of each day (key 15,30,45,60,75,90 → display 16,31,46,61,76,91); else 1px.
     final tableRows = <TableRow>[];
     for (var i = 0; i < dataEntries.length; i++) {
-      final r = dataEntries[i].value;
+      final key = dataEntries[i].key;
       final h = dataRowHeights[i];
+      final hasBottom = i == dataEntries.length - 1;
+      final topW = i == 0 ? 0.0 : (key % 15 == 0 && key > 0 ? 2.0 : _lineW);
+      final bottomW = hasBottom ? _lineW : 0.0;
       final rowBorder = Border(
-        bottom: BorderSide(color: Colors.black, width: _lineW),
+        top: BorderSide(color: Colors.black, width: topW),
+        bottom: BorderSide(color: Colors.black, width: bottomW),
       );
       final rowDecoration = BoxDecoration(color: Colors.white, border: rowBorder);
       tableRows.add(TableRow(
@@ -566,54 +730,6 @@ class _PeriodSectionWidgetState extends State<_PeriodSectionWidget> {
         children: List.generate(17, (_) => SizedBox(height: h)),
       ));
     }
-
-    // Column A: 20 px left strip – header row "0" then data row indices. Trim last row when constrained to avoid RenderFlex overflow.
-    final columnAHeaderHeight = _tableTopW + _periodHeaderRowHeight;
-    final columnADesiredHeight = columnAHeaderHeight + _tableTopW + dataRowHeights.fold<double>(0.0, (s, h) => s + h);
-    final columnASection = LayoutBuilder(
-      builder: (context, constraints) {
-        final available = constraints.maxHeight;
-        final overflow = (columnADesiredHeight - available).clamp(0.0, double.infinity);
-        final rowHeights = List<double>.from(dataRowHeights);
-        if (overflow > 0 && rowHeights.isNotEmpty) {
-          final lastIdx = rowHeights.length - 1;
-          rowHeights[lastIdx] = (rowHeights[lastIdx]! - overflow).clamp(1.0, double.infinity);
-        }
-        final contentHeight = columnAHeaderHeight + _tableTopW + rowHeights.fold<double>(0.0, (s, h) => s + h);
-        return SizedBox(
-          width: _columnAWidth,
-          height: contentHeight,
-          child: Container(
-            color: Colors.white,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                SizedBox(height: _tableTopW),
-                SizedBox(
-                  height: _periodHeaderRowHeight,
-                  child: Center(
-                    child: Text(
-                      _rowIndexLabel(0),
-                      style: const TextStyle(fontSize: 10, color: Colors.black),
-                    ),
-                  ),
-                ),
-                for (var i = 0; i < dataEntries.length; i++)
-                  SizedBox(
-                    height: rowHeights[i],
-                    child: Center(
-                      child: Text(
-                        _rowIndexLabel(dataEntries[i].key + 1),
-                        style: const TextStyle(fontSize: 10, color: Colors.black),
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-          ),
-        );
-      },
-    );
 
     final tableSection = SizedBox(
       width: tableWidth,
@@ -639,8 +755,8 @@ class _PeriodSectionWidgetState extends State<_PeriodSectionWidget> {
       child: tableSection,
     );
 
-    // Weekday column: same height as Period table (effectiveTableHeight); no top border; 7 sections scaled by day row counts; 2 px bottom/left border.
-    const dayColumnHorizontalBorderW = 1.0; // internal horizontal borders in Weekday column
+    // Weekday column: same height as Period table (effectiveTableHeight); no top border; 7 sections scaled by day row counts; 2 px bottom/left border; 2 px internal borders.
+    const dayColumnHorizontalBorderW = 2.0; // internal horizontal borders in Weekday column
     const dayColumnTopBorderW = 0.0; // no top border
     const dayColumnBottomBorderW = 2.0; // bottom border of column
     const dayColumnLeftBorderW = 2.0; // left border of column
@@ -709,25 +825,16 @@ class _PeriodSectionWidgetState extends State<_PeriodSectionWidget> {
       width: _periodWidth,
       height: sectionHeight,
       child: ClipRect(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            columnASection,
-            SizedBox(
-              height: sectionHeight,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
+            periodHeaderSection,
+            Expanded(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  periodHeaderSection,
-                  Expanded(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        periodDayColumn,
-                        periodTableSection,
-                      ],
-                    ),
-                  ),
+                  periodDayColumn,
+                  periodTableSection,
                 ],
               ),
             ),

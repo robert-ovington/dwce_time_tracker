@@ -209,7 +209,62 @@
     .flutter-loaded {
       overflow: auto;
     }
+    
+    /* Print: remove margins; match page to content so output is not offset/centered */
+    @media print {
+      body, html {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      @page {
+        size: 2156px 1520px;
+        margin: 0;
+      }
+      html.print-timesheet-view,
+      html.print-timesheet-view body,
+      html.print-timesheet-view body > * {
+        width: 2156px !important;
+        height: 1520px !important;
+        min-width: 2156px !important;
+        min-height: 1520px !important;
+        max-width: 2156px !important;
+        max-height: 1520px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+      }
+    }
+    
+    /* Print-only view: fix page size to upscaled content 2156×1520 so display area fits with no scroll/clip.
+       Force html, body, and Flutter host to exact size so content is never centered and viewport matches. */
+    html.print-timesheet-view,
+    html.print-timesheet-view body,
+    html.print-timesheet-view body > * {
+      position: absolute !important;
+      left: 0 !important;
+      top: 0 !important;
+      width: 2156px !important;
+      height: 1520px !important;
+      min-width: 2156px !important;
+      min-height: 1520px !important;
+      max-width: 2156px !important;
+      max-height: 1520px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+      box-sizing: border-box !important;
+    }
   </style>
+  
+  <script>
+    (function() {
+      if (window.location.search.indexOf('print=margins') !== -1) {
+        document.documentElement.classList.add('print-timesheet-view');
+      }
+    })();
+  </script>
   
   <script>
     // Function to hide loading screen (multiple methods)
